@@ -1,0 +1,783 @@
+﻿#if<SkinType!=OnlyTouch>
+	<ControlBoxSkinArea Image='TouchControl.png' AlphaMode='1' Width='301' Height='466' UseWindowFrame='0' >
+		<Control>
+			<Static Align='Top' LeftMargin='10' RightMargin='10' ImageLeft='0' ImageTop='4' ImageWidth='301' ImageHeight='34' Height='34' >
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Tooltip='$CMD_CLOSE_WINDOW' CmdID='ID_CONTROL_BOX_WINDOW' Width='14' Height='13' ImageLeft='372' ImageTop='4' />
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<Slider Align='Right' CmdID='CMD_TRANS_CB' Image='Slider.png' OffsetTop='13' Width='50' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />
+			</Static>
+			
+			<Static Align='Bottom' LeftMargin='10' RightMargin='10' Height='3' ImageLeft='0' ImageTop='467' ImageWidth='301' ImageHeight='3' />
+			
+			<Static Align='Left' TopMargin='10' BottomMargin='10' Width='3' ImageLeft='0' ImageTop='25' ImageWidth='3' ImageHeight='429' />
+			
+			<Static Align='Right' LeftMargin='10' RightMargin='10' Width='3' ImageLeft='298' ImageTop='25' ImageWidth='3' ImageHeight='429' />			
+			
+			<Static Align='Client' LeftMargin='10' RightMargin='10' TopMargin='10' BottomMargin='10' ImageLeft='3' ImageTop='38' ImageWidth='295' ImageHeight='429' >
+			
+				<Static Align='Top' LeftMargin='10' RightMargin='10' Height='31' ImageLeft='3' ImageTop='38' ImageWidth='295' ImageHeight='31' >				
+				
+					<Button CmdID='CMD_SELECT_PAGE' PageIndex='0' Left='0' Top='0' Width='74' Height='31' ImageLeft='307' ImageTop='169'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_SUBTITLE' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='112' />
+					</Button>
+					<Button CmdID='CMD_SELECT_PAGE' PageIndex='1' Left='74' Top='0' Width='74' Height='31' ImageLeft='307' ImageTop='169'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_VIDEO' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='112' />
+					</Button>
+					<Button CmdID='CMD_SELECT_PAGE' PageIndex='2' Left='148' Top='0' Width='74' Height='31' ImageLeft='307' ImageTop='169'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_PLAYBACK' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='112' />
+					</Button>
+					<Button CmdID='CMD_SELECT_PAGE' PageIndex='3' Left='222' Top='0' Width='74' Height='31' ImageLeft='307' ImageTop='169'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_AUDIO' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='112' />
+					</Button>
+				</Static>
+
+				
+				<Static State='CMD_PAGE_CONTROL' PageIndex='0' Left='0' Top='31' ImageLeft='3' ImageTop='69' ImageWidth='295' ImageHeight='398' Width='295' Height='398' >
+				
+					<Label CmdID='CMD_CAPTION_SIZE_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='20' Top='25' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_CAPTION_SIZE' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_CAPTION_DEC_SIZE' Left='20' Top='50' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_DEC' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_DEF_SIZE' Left='106' Top='50' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_INC_SIZE' Left='192' Top='50' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_INC' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					
+					<Label CmdID='CMD_CAPTION_VERT_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='20' Top='95' Width='66' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_POSITION1' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_CAPTION_MOVE_UP' Left='20' Top='120' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_UP1' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_RESET_POS' Left='106' Top='120' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_MOVE_DOWN' Left='192' Top='120' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_DOWN1' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+
+					<Label Left='20' Top='165' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_FONT' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_CAPTION_FONT_SELECT' Left='20' Top='190' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_CAPTION_FONT_MESSAGE' Left='30' Top='191' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' Ellipsis='1' />
+					
+					<Label Left='20' Top='240' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_CAPTION_SEL' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_CAPTION_LANG' Left='20' Top='265' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_CAPTION_SEL_MESSAGE' Left='30' Top='266' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' Ellipsis='1' />
+
+					<Label CmdID='CMD_CAPTION_SYNC_MESSAGE' Left='20' Top='315' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_SUBTITLE_SYNC1' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_CAPTION_SLOW_SYNC' Left='20' Top='340' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_SLOWER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_RESET_SYNC' Left='106' Top='340' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_FAST_SYNC' Left='192' Top='340' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_FASTER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+
+				</Static>
+				<Static State='CMD_PAGE_CONTROL' PageIndex='1' Left='0' Top='31' ImageLeft='3' ImageTop='69' ImageWidth='295' ImageHeight='398' Width='295' Height='398' >
+				
+					<Label FontName='#DEFAULT_UI_FONT' Left='20' Top='25' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_VIDEO_COLOR' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_VIDEO_RESET_PROPERTY' Left='192' Top='25' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_VIDEO_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>				
+					
+					<Label CmdID='CMD_COLOR_OFFSET_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='1' Top='61' Width='100' Height='20' FontSize='11' Text='$CONTROL_BRIGHTNESS1' HoriAlignment='2' VertAlignment='1' ColorX='1052' ColorY='112' />
+					<Slider CmdID='CMD_COLOR_OFFSET' Left='110' Top='63' Width='170' Height='16' ImageWidth='170' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='307' ImageTop='133' BackImageLeft='305' BackImageTop='149' ThumbImageLeft='572' ThumbImageTop='134' LeftMargin='5' RightMargin='5' />
+
+					<Label CmdID='CMD_COLOR_GAIN_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='1' Top='95' Width='100' Height='20' FontSize='11' Text='$CONTROL_CONTRAST1' HoriAlignment='2' VertAlignment='1' ColorX='1052' ColorY='112' />
+					<Slider CmdID='CMD_COLOR_GAIN' Left='110' Top='96' Width='170' Height='16' ImageWidth='170' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='307' ImageTop='133' BackImageLeft='305' BackImageTop='149' ThumbImageLeft='572' ThumbImageTop='134' LeftMargin='5' RightMargin='5' />
+
+					<Label CmdID='CMD_COLOR_SAT_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='1' Top='129' Width='100' Height='20' FontSize='11' Text='$CONTROL_SATURATION1' HoriAlignment='2' VertAlignment='1' ColorX='1052' ColorY='112' />
+					<Slider CmdID='CMD_COLOR_SAT' Left='110' Top='130' Width='170' Height='16' ImageWidth='170' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='307' ImageTop='133' BackImageLeft='305' BackImageTop='149' ThumbImageLeft='572' ThumbImageTop='134' LeftMargin='5' RightMargin='5' />
+
+					<Label CmdID='CMD_COLOR_HUE_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='1' Top='163' Width='100' Height='20' FontSize='11' Text='$CONTROL_COLOR1' HoriAlignment='2' VertAlignment='1' ColorX='1052' ColorY='112' />
+					<Slider CmdID='CMD_COLOR_HUE' Left='110' Top='164' Width='170' Height='16' ImageWidth='170' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='307' ImageTop='133' BackImageLeft='305' BackImageTop='149' ThumbImageLeft='572' ThumbImageTop='134' LeftMargin='5' RightMargin='5' />
+					
+					<Label Left='20' Top='200' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_VIDEO_RATIO' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_SCREEN_RATIO' Left='20' Top='225' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_SCREEN_RATIO_MESSAGE' Left='30' Top='226' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' Ellipsis='1' />
+					
+					<Label Left='20' Top='270' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_VIDEO_SEL' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_VIDEO_STREAM' Left='20' Top='295' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_VIDEO_SEL_MESSAGE' Left='30' Top='296' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' Ellipsis='1' />
+					
+					<Button CmdID='ID_VIDEO_IMAGE_CAPTURE_PROMPT' Left='213' Top='340' Width='63' Height='28' ImageLeft='307' ImageTop='103'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_CAPTURE' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='159' />
+					</Button>
+
+				</Static>
+				<Static State='CMD_PAGE_CONTROL' PageIndex='2' Left='0' Top='31' ImageLeft='3' ImageTop='69' ImageWidth='295' ImageHeight='398' Width='295' Height='398' >
+					<Label FontName='#DEFAULT_UI_FONT' Left='20' Top='25' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_SEEK_5' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_SEEK_5' Left='20' Top='50' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_SEEK_5_MESSAGE' Left='30' Top='51' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' AutoSize='1' />
+					
+					<Label FontName='#DEFAULT_UI_FONT' Left='20' Top='95' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_SEEK_30' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_SEEK_30' Left='20' Top='120' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_SEEK_30_MESSAGE' Left='30' Top='121' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' AutoSize='1' />
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='20' Top='165' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_SEEK_60' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_SEEK_60' Left='20' Top='190' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_SEEK_60_MESSAGE' Left='30' Top='191' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' AutoSize='1' />
+					
+					<Label FontName='#DEFAULT_UI_FONT' Left='20' Top='235' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_AB' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_PLAY_REPEAT_RESET' Left='20' Top='260' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_STOP' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Label CmdID='CMD_REPEAT_START_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='106' Top='235' Width='82' Height='24' FontSize='12' ColorX='1052' ColorY='112' AutoVisible='1' HoriAlignment='1' />
+					<Button CmdID='ID_PLAY_REPEAT_START_SET' Left='106' Top='260' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_A' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Label CmdID='CMD_REPEAT_END_MESSAGE' FontName='#DEFAULT_UI_FONT' Left='192' Top='235' Width='82' Height='24' FontSize='12' ColorX='1052' ColorY='112' AutoVisible='1' HoriAlignment='1' />
+					<Button CmdID='ID_PLAY_REPEAT_STOP_SET' Left='192' Top='260' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_B' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>					
+
+					<Label CmdID='CMD_PLAY_SPEED_MESSAGE' Left='20' Top='305' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_PLAYBACK_SPEED1' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Label Left='20' Top='335' Width='25' Height='10' FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' FontBold='1' Text='0.5' ColorX='1052' ColorY='112' HoriAlignment='0' VertAlignment='1' />
+					<Label Left='250' Top='335' Width='25' Height='10' FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' FontBold='1' Text='2.0' ColorX='1052' ColorY='112' HoriAlignment='1' VertAlignment='1' />
+					<Slider CmdID='CMD_SPEED_CTRL' Left='50' Top='332' Width='188' Height='16' MinValue='500' MaxValue='2000' ImageWidth='170' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='307' ImageTop='133' BackImageLeft='305' BackImageTop='149' ThumbImageLeft='572' ThumbImageTop='134' LeftMargin='5' RightMargin='5' />
+					<Button CmdID='ID_PLAY_SPEED_SLOWER' Left='20' Top='360' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_PLAYBACK_SLOWER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_PLAY_SPEED_NORMAL' Left='106' Top='360' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_PLAYBACK_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_PLAY_SPEED_FASTER' Left='192' Top='360' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_PLAYBACK_FASTER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+
+				</Static>				
+				<Static State='CMD_PAGE_CONTROL' PageIndex='3' Left='0' Top='31' ImageLeft='3' ImageTop='69' ImageWidth='295' ImageHeight='398' Width='295' Height='398' >
+					
+					<Label FontName='#DEFAULT_UI_FONT' Left='20' Top='25' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_AUDIO_SEL' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_AUDIO_LANG' Left='20' Top='50' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_AUDIO_SEL_MESSAGE' Left='30' Top='51' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' Ellipsis='1' />
+					
+					<Label FontName='#DEFAULT_UI_FONT' Left='20' Top='105' Width='61' Height='24' FontSize='13' FontBold='1' Text='$CONTROL_EQUALIZER' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='CMD_POPUPMENU_AUDIO_EQULIZER' Left='20' Top='130' Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_EQ_PRESET_MESSAGE' Left='30' Top='131' Width='200' Height='25' FontName='#DEFAULT_UI_FONT' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' Ellipsis='1' />
+
+					<Label CmdID='CMD_PLAY_SYNC_MESSAGE' Left='20' Top='185' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_PLAYBACK_SYNC' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_AUDIO_SLOWER' Left='20' Top='210' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_SLOWER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_AUDIO_NORMAL' Left='106' Top='210' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_AUDIO_FASTER' Left='192' Top='210' Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_FASTER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					
+					<Label CmdID='CMD_MASTER_VOLUME_MESSAGE' Left='20' Top='260' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_AUDIO_MASTER_VOLUME' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Slider CmdID='CMD_MASTER_VOLUME' Left='20' Top='288' Width='250' Height='16' ImageWidth='170' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='307' ImageTop='133' BackImageLeft='305' BackImageTop='149' ThumbImageLeft='572' ThumbImageTop='134' LeftMargin='5' RightMargin='5' />
+
+					<Label CmdID='CMD_WAVE_VOLUME_MESSAGE' Left='20' Top='320' Width='66' Height='24' FontName='#DEFAULT_UI_FONT' FontSize='13' FontBold='1' Text='$CONTROL_AUDIO_WAVE_VOLUME' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Slider CmdID='CMD_WAVE_VOLUME' Left='20' Top='348' Width='250' Height='16' ImageWidth='170' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='307' ImageTop='133' BackImageLeft='305' BackImageTop='149' ThumbImageLeft='572' ThumbImageTop='134' LeftMargin='5' RightMargin='5' />
+					
+				</Static>
+
+			</Static>
+		</Control>
+	</ControlBoxSkinArea>
+#else
+	<ControlBoxSkinArea Image='Control.png' AlphaMode='1' Width='301' Height='227' UseWindowFrame='0' >
+		<Control>
+			<Static Align='Top' LeftMargin='10' RightMargin='10' Height='34' ImageLeft='0' ImageTop='563' ImageWidth='301' ImageHeight='34' AltImageLeft='949' AltImageTop='140' >
+				<Layout Align='Left' Width='10' />
+				<Label Align='Left' Width='100' ColorX='482' ColorY='42' FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' FontBold='1' VertAlignment='1' Text='$CONTROL_BOX_TITLE' />
+			
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Tooltip='$CMD_CLOSE_WINDOW' CmdID='ID_CONTROL_BOX_WINDOW' Width='14' ImageLeft='65' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<Slider Align='Right' CmdID='CMD_TRANS_CB' Image='Slider.png' OffsetTop='13' Width='50' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />
+			</Static>
+			
+			<Static Align='Bottom' LeftMargin='10' RightMargin='10' Height='3' ImageLeft='0' ImageTop='787' ImageWidth='307' ImageHeight='3' AltImageLeft='949' AltImageTop='364' />
+			
+			<Static Align='Left' TopMargin='10' BottomMargin='10' Width='3' ImageLeft='0' ImageTop='596' ImageWidth='3' ImageHeight='186' AltImageLeft='949' AltImageTop='173' />
+			
+			<Static Align='Right' LeftMargin='10' RightMargin='10' Width='3' ImageLeft='298' ImageTop='596' ImageWidth='3' ImageHeight='186' AltImageLeft='1247' AltImageTop='173' />
+		
+			<Static Align='Client' LeftMargin='10' RightMargin='10' TopMargin='10' BottomMargin='10' ImageLeft='3' ImageTop='597' ImageWidth='295' ImageHeight='190' AltImageLeft='952' AltImageTop='173' >
+				<Static Align='Top' LeftMargin='10' RightMargin='10' Height='31' ImageLeft='3' ImageTop='597' ImageWidth='295' ImageHeight='31' AltImageLeft='952' AltImageTop='173' >
+				
+					<Button Align='Left' CmdID='CMD_SELECT_PAGE' PageIndex='0' Width='74' ImageLeft='0' ImageTop='56' ImageWidth='74' ImageHeight='31' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_AUDIO' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='58' OverColorX='482' OverColorY='42' PushColorX='482' PushColorY='42' />
+					</Button>
+					<Button Align='Left' CmdID='CMD_SELECT_PAGE' PageIndex='1' Width='74' ImageLeft='0' ImageTop='56' ImageWidth='74' ImageHeight='31' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_VIDEO' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='58' OverColorX='482' OverColorY='42' PushColorX='482' PushColorY='42' />
+					</Button>
+					<Button Align='Left' CmdID='CMD_SELECT_PAGE' PageIndex='2' Width='74' ImageLeft='0' ImageTop='56' ImageWidth='74' ImageHeight='31' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_SUBTITLE' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='58' OverColorX='482' OverColorY='42' PushColorX='482' PushColorY='42' />
+					</Button>
+					<Button Align='Left' CmdID='CMD_SELECT_PAGE' PageIndex='3' Width='74' ImageLeft='0' ImageTop='56' ImageWidth='74' ImageHeight='31' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='13' Text='$CONTROL_PLAYBACK' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='58' OverColorX='482' OverColorY='42' PushColorX='482' PushColorY='42' />
+					</Button>
+				
+				</Static>
+			
+				<Static State='CMD_PAGE_CONTROL' PageIndex='0' Left='0' Top='31' Width='295' Height='159' ImageLeft='326' ImageTop='624' ImageWidth='295' ImageHeight='159' >
+
+					<Button CmdID='ID_AUDIO_EQULIZER' DownFlag='1' Left='10' Top='24' Width='82' Height='14' ImageLeft='326' ImageTop='565'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_EQUALIZER' HoriAlignment='0' VertAlignment='1' ColorX='482' ColorY='74' OffsetLeft=17 />
+					</Button>
+
+					<Button CmdID='CMD_POPUPMENU_AUDIO_EQULIZER' Left='90' Top='19' Width='97' Height='22' ImageLeft='0' ImageTop='230' >
+						<Label CmdID='CMD_EQ_PRESET_MESSAGE' ColorX='482' ColorY='89' FontName='#DEFAULT_UI_FONT' FontSize='11' VertAlignment='1' OffsetLeft=5  />
+					</Button>
+					<Button CmdID='CMD_POPUPMENU_EQULIZER_PRESET' Left='192' Top='19' Width='41' Height='22' ImageLeft='407' ImageTop='230' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_PRESET' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='89' />
+					</Button>
+					<Label FontName='#DEFAULT_UI_FONT' Left='240' Top='20' Width='44' Height='20' FontSize='11' FontBold='1' Text='$CONTROL_VOLUME' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74' />
+
+					<Slider CmdID='CMD_EQULIZER_0' Vert='1' Left='11' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_1' Vert='1' Left='34' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_2' Vert='1' Left='57' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_3' Vert='1' Left='80' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_4' Vert='1' Left='103' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_5' Vert='1' Left='126' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_6' Vert='1' Left='149' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_7' Vert='1' Left='172' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_8' Vert='1' Left='195' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_EQULIZER_9' Vert='1' Left='218' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_MASTER_VOLUME' Vert='1' Left='247' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+					<Slider CmdID='CMD_WAVE_VOLUME' Vert='1' Left='265' Top='69' Width='14' Height='70' ImageWidth='14' ImageHeight='70' ThumbWidth='14' ThumbHeight='12' ImageLeft='81' ImageTop='141' BackImageLeft='69' BackImageTop='141' ThumbImageLeft='0' ThumbImageTop='141' TopMargin='5' BottomMargin='5' />
+
+				</Static>
+				<Static State='CMD_PAGE_CONTROL' PageIndex='1' Left='0' Top='31' Width='295' Height='159' ImageLeft='643' ImageTop='624' ImageWidth='295' ImageHeight='159' >
+					
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='21' Width='65' Height='20' FontSize='11' Text='$CONTROL_BRIGHTNESS' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Slider CmdID='CMD_COLOR_OFFSET' Left='71' Top='24' Width='154' Height='12' ImageWidth='154' ImageHeight='12' ThumbWidth='14' ThumbHeight='12' ImageLeft='111' ImageTop='149' BackImageLeft='111' BackImageTop='137' ThumbImageLeft='0' ThumbImageTop='141' LeftMargin='5' RightMargin='5' />
+					<Button CmdID='CMD_COLOR_OFFSET_DEFAULT' Left='235' Top='21' Width='41' Height='18' ImageLeft='0' ImageTop='297'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='10' Text='$CONTROL_VIDEO_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74' />
+					</Button>
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='45' Width='65' Height='20' FontSize='11' Text='$CONTROL_CONTRAST' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Slider CmdID='CMD_COLOR_GAIN' Left='71' Top='48' Width='154' Height='12' ImageWidth='154' ImageHeight='12' ThumbWidth='14' ThumbHeight='12' ImageLeft='111' ImageTop='149' BackImageLeft='111' BackImageTop='137' ThumbImageLeft='0' ThumbImageTop='141' LeftMargin='5' RightMargin='5' />
+					<Button CmdID='CMD_COLOR_GAIN_DEFAULT' Left='235' Top='45' Width='41' Height='18' ImageLeft='0' ImageTop='297'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='10' Text='$CONTROL_VIDEO_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74' />
+					</Button>
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='69' Width='65' Height='20' FontSize='11' Text='$CONTROL_SATURATION' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Slider CmdID='CMD_COLOR_SAT' Left='71' Top='72' Width='154' Height='12' ImageWidth='154' ImageHeight='12' ThumbWidth='14' ThumbHeight='12' ImageLeft='111' ImageTop='149' BackImageLeft='111' BackImageTop='137' ThumbImageLeft='0' ThumbImageTop='141' LeftMargin='5' RightMargin='5' />
+					<Button CmdID='CMD_COLOR_SAT_DEFAULT' Left='235' Top='69' Width='41' Height='18' ImageLeft='0' ImageTop='297'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='10' Text='$CONTROL_VIDEO_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74' />
+					</Button>
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='93' Width='65' Height='20' FontSize='11' Text='$CONTROL_COLOR' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Slider CmdID='CMD_COLOR_HUE' Left='71' Top='96' Width='154' Height='12' ImageWidth='154' ImageHeight='12' ThumbWidth='14' ThumbHeight='12' ImageLeft='111' ImageTop='149' BackImageLeft='111' BackImageTop='137' ThumbImageLeft='0' ThumbImageTop='141' LeftMargin='5' RightMargin='5' />
+					<Button CmdID='CMD_COLOR_HUE_DEFAULT' Left='235' Top='93' Width='41' Height='18' ImageLeft='0' ImageTop='297'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='10' Text='$CONTROL_VIDEO_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74' />
+					</Button>
+				
+					<Button CmdID='ID_VIDEO_BLUR' DownFlag='1' Left='25' Top='133' Width='51' Height='13' ImageLeft='282' ImageTop='140' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SOFTEN' HoriAlignment='0' VertAlignment='1' ColorX='482' ColorY='74' OffsetLeft='14' />
+					</Button>					
+					<Button CmdID='ID_VIDEO_SHARPEN' DownFlag='1' Left='89' Top='133' Width='51' Height='13' ImageLeft='282' ImageTop='140' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SHARPEN' HoriAlignment='0' VertAlignment='1' ColorX='482' ColorY='74' OffsetLeft='14' />
+					</Button>				
+					<Button CmdID='ID_VIDEO_POSTPROC' DownFlag='1' Left='153' Top='133' Width='51' Height='13' ImageLeft='282' ImageTop='140' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_DEBLOCK' HoriAlignment='0' VertAlignment='1' ColorX='482' ColorY='74' OffsetLeft='14' />
+					</Button>
+
+					<Button CmdID='ID_VIDEO_IMAGE_CAPTURE_PROMPT' Left='235' Top='129' Width='41' Height='22' ImageLeft='189' ImageTop='297' >
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_CAPTURE' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74' />
+					</Button>
+
+				</Static>
+				<Static State='CMD_PAGE_CONTROL' PageIndex='2' Left='0' Top='31' Width='295' Height='159' ImageLeft='960' ImageTop='624' ImageWidth='295' ImageHeight='159' >
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='21' Width='58' Height='22' FontSize='11' Text='$CONTROL_FONT' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_CAPTION_FONT_SELECT' Left='64' Top='20' Width='160' Height='22' ImageLeft='0' ImageTop='341'>
+						<Label CmdID='CMD_CAPTION_FONT_MESSAGE' ColorX='482' ColorY='164' FontName='#DEFAULT_UI_FONT' FontSize='11' VertAlignment='1' OffsetLeft='5' />
+					</Button>
+
+					<Label CmdID='CMD_CAPTION_SIZE_MESSAGE' Left='232' Top='21' Width='29' Height='21' FontName='#DEFAULT_UI_FONT' FontSize='11' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_CAPTION_INC_SIZE' Left='265' Top='20' Width='16' Height='11' ImageLeft='659' ImageTop='341' />
+					<Button CmdID='ID_CAPTION_DEC_SIZE' Left='265' Top='31' Width='16' Height='12' ImageLeft='659' ImageTop='357' />
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='68' Width='58' Height='22' FontSize='11' Text='$CONTROL_POSITION' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_CAPTION_MOVE_UP' Left='64' Top='67' Width='51' Height='22' ImageLeft='0' ImageTop='389'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_UP' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_CAPTION_MOVE_DOWN' Left='118' Top='67' Width='51' Height='22' ImageLeft='217' ImageTop='389'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_DOWN' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_CAPTION_MOVE_LEFT' Left='172' Top='67' Width='51' Height='22' ImageLeft='434' ImageTop='389'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_LEFT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_CAPTION_MOVE_RIGHT' Left='226' Top='67' Width='51' Height='22' ImageLeft='651' ImageTop='389'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_RIGHT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='119' Width='58' Height='22' FontSize='11' Text='$CONTROL_SUBTITLE_SYNC' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_CAPTION_SLOW_SYNC' Left='64' Top='118' Width='69' Height='22' ImageLeft='0' ImageTop='433'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_SLOWER' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_CAPTION_FAST_SYNC' Left='136' Top='118' Width='69' Height='22' ImageLeft='289' ImageTop='433'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_FASTER' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_CAPTION_RESET_SYNC' Left='208' Top='118' Width='69' Height='22' ImageLeft='578' ImageTop='433'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_SUBTITLE_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+
+				</Static>
+				<Static State='CMD_PAGE_CONTROL' PageIndex='3' Left='0' Top='31' Width='295' Height='159' ImageLeft='960' ImageTop='413' ImageWidth='295' ImageHeight='159' >
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='18' Width='60' Height='22' FontSize='11' Text='$CONTROL_SEEK' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_PLAYBACK_1MIN_BACK' AltCmdID='ID_PLAYBACK_5MIN_BACK' Left='66' Top='18' Width='51' Height='22' ImageLeft='0' ImageTop='477' />
+					<Button CmdID='ID_PLAYBACK_5SEC_BACK' AltCmdID='ID_PLAYBACK_30SEC_BACK' Left='120' Top='18' Width='51' Height='22' ImageLeft='217' ImageTop='477' />
+					<Button CmdID='ID_PLAYBACK_5SEC_FORW' AltCmdID='ID_PLAYBACK_30SEC_FORW' Left='174' Top='18' Width='51' Height='22' ImageLeft='434' ImageTop='477' />
+					<Button CmdID='ID_PLAYBACK_1MIN_FORW' AltCmdID='ID_PLAYBACK_5MIN_FORW' Left='228' Top='18' Width='51' Height='22' ImageLeft='651' ImageTop='477' />
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='66' Width='60' Height='22' FontSize='11' Text='$CONTROL_PLAYBACK_SPEED' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_PLAY_SPEED_SLOWER' Left='66' Top='66' Width='69' Height='22' ImageLeft='0' ImageTop='433'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_PLAYBACK_SLOWER' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_PLAY_SPEED_FASTER' Left='138' Top='66' Width='69' Height='22' ImageLeft='289' ImageTop='433'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_PLAYBACK_FASTER' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_PLAY_SPEED_NORMAL' Left='210' Top='66' Width='69' Height='22' ImageLeft='578' ImageTop='433'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_PLAYBACK_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+
+					<Label FontName='#DEFAULT_UI_FONT' Left='1' Top='115' Width='60' Height='22' FontSize='11' Text='$CONTROL_AB' HoriAlignment='2' VertAlignment='1' ColorX='482' ColorY='74' />
+					<Label CmdID='CMD_REPEAT_START_MESSAGE' Left='68' Top='115' Width='47' Height='20' FontName='#DEFAULT_UI_FONT' FontSize='11' VertAlignment='1' HoriAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_PLAY_REPEAT_START_SET' Left='115' Top='114' Width='31' Height='22' ImageLeft='0' ImageTop='521'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_A' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Label CmdID='CMD_REPEAT_END_MESSAGE' Left='158' Top='115' Width='47' Height='20' FontName='#DEFAULT_UI_FONT' FontSize='11' VertAlignment='1' HoriAlignment='1' ColorX='482' ColorY='74' />
+					<Button CmdID='ID_PLAY_REPEAT_STOP_SET' Left='205' Top='114' Width='31' Height='22' ImageLeft='137' ImageTop='521'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_B' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+					<Button CmdID='ID_PLAY_REPEAT_RESET' Left='241' Top='114' Width='41' Height='22' ImageLeft='274' ImageTop='521'>
+						<Label FontName='#DEFAULT_UI_FONT' FontSize='11' Text='$CONTROL_STOP' HoriAlignment='1' VertAlignment='1' ColorX='482' ColorY='74'/>
+					</Button>
+
+				</Static>
+
+			</Static>
+		</Control>
+	</ControlBoxSkinArea>
+#endif
+
+#if<SkinStyle==Black>
+	#include<ChatBlack.txt #PREV_ARG>
+#else
+	#include<Chat.txt #PREV_ARG>
+#endif
+
+	<BroadcastListSkinArea Image='BRList.png' AlphaMode='1' WidthLimit='328' HeightLimit='200' UseWindowFrame='0' >
+		<Control>
+			<Static Align='Top' LeftMargin='100' RightMargin='10' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageTop='134' ImageWidth='328' ImageHeight='34' Height='34' AltImageLeft='330' AltImageTop='134' >
+				<Layout Align='Left' Width='10' />
+				<Label Align='Left' Width='100' ColorX='572' ColorY='107' FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' FontBold='1' VertAlignment='1' Text='$MAIN_TAB_PROGRAM' />
+			
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Tooltip='$CMD_CLOSE_WINDOW' CmdID='ID_BROADCAST_LIST_WINDOW' Width='14' ImageLeft='260' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<#CONTROL1 Align='Right' Tooltip='$CMD_ATTACH_MAIN' CmdID='CMD_ATTACH_BROADCAST' Width='14' ImageLeft='325' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				<#CONTROL2 Align='Right' Width='10' />
+				<Slider Align='Right' CmdID='CMD_TRANS_BR' Image='Slider.png' OffsetTop='13' Width='50' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />
+			</Static>
+
+			<Static Align='Bottom' LeftMargin='100' RightMargin='10' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageTop='401' ImageWidth='328'  ImageHeight='3' Height='3' AltImageLeft='330' AltImageTop='401' />
+
+			<Static Align='Left' LeftMargin='0' RightMargin='0' TopMargin='150' BottomMargin='20' ImageLeft='0' ImageWidth='1' ImageTop='168' ImageHeight='233' Width='3' AltImageLeft='330' AltImageTop='168' />
+			<Static Align='Right' LeftMargin='0' RightMargin='0' TopMargin='150' BottomMargin='20' ImageLeft='325' ImageWidth='1' ImageTop='168' ImageHeight='233' Width='3' AltImageLeft='655' AltImageTop='168' />
+
+      		<Static Align='Client' Contain='CMD_BROADCAST_HOLDER'>
+        		<Static Align='Client' Contain='CMD_BROADCAST_LIST' />
+			</Static>
+		</Control>
+	</BroadcastListSkinArea>	
+
+	<BroadcastToolSkinArea Image='BRTool.png' AlphaMode='1' Width='321' Height='556' UseWindowFrame='0' >
+		<Control>
+			<Static Align='Top' LeftMargin='100' RightMargin='20' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageTop='885' ImageWidth='326' ImageHeight='34' Height='34' AltImageLeft='340' AltImageTop='885' >
+				<Layout Align='Left' Width='10' />
+				<Label Align='Left' Width='100' ColorX='512' ColorY='54' FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' FontBold='1' VertAlignment='1' Text='$MAIN_POPUP_CAST' />		
+				<Layout Align='Left' Width='10' />
+				<Button Align='Left' CmdID='CMD_BROADCAST_GUIDE' Width='52' ImageLeft='0' ImageTop='52' ImageWidth='52' ImageHeight='16' />
+				
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Tooltip='$CMD_CLOSE_WINDOW' CmdID='ID_BROADCAST_TOOL_WINDOW' Width='14' ImageLeft='195' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />				
+				<Slider Align='Right' CmdID='CMD_TRANS_BT' Image='Slider.png' OffsetTop='13' Width='50' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />
+			</Static>
+
+			<Static Align='Bottom' LeftMargin='100' RightMargin='20' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageTop='1165' ImageWidth='326' ImageHeight='3' Height='3' AltImageLeft='342' AltImageTop='1165' />
+
+			<Static Align='Left' LeftMargin='0' RightMargin='0' TopMargin='50' BottomMargin='50' ImageLeft='0' ImageTop='919' ImageWidth='3' ImageHeight='246' Width='3' AltImageLeft='340' AltImageTop='919' />
+      		<Static Align='Right' LeftMargin='0' RightMargin='0' TopMargin='50' BottomMargin='50' ImageLeft='323' ImageTop='919' ImageWidth='3' ImageHeight='246' Width='3' AltImageLeft='663' AltImageTop='919' />
+
+			<Static Align='Top' LeftMargin='1' RightMargin='20' TopMargin='0' BottomMargin='0' ImageLeft='343' ImageTop='919' ImageWidth='320' ImageHeight='31' Height='31' >
+				<Button CmdID='CMD_BROADCAST_DEVICE' Left='0' Top='0' Width='78' Height='30' ImageLeft='0' ImageTop='496'>
+					<Label FontName='#DEFAULT_UI_FONT' FontSize='11' FontBold='1' Text='$CAST_TOOL_DEVICE' HoriAlignment='1' VertAlignment='1' ColorX='512' ColorY='23' />
+				</Button>
+				<Button CmdID='CMD_BROADCAST_INFO' Left='78' Top='0' Width='78' Height='30' ImageLeft='0' ImageTop='496'>
+					<Label FontName='#DEFAULT_UI_FONT' FontSize='11' FontBold='1' Text='$CAST_TOOL_INFO' HoriAlignment='1' VertAlignment='1' ColorX='512' ColorY='23' />
+				</Button>
+				<Button CmdID='CMD_BROADCAST_EFFECT' Left='156' Top='0' Width='78' Height='30' ImageLeft='0' ImageTop='496'>
+					<Label FontName='#DEFAULT_UI_FONT' FontSize='11' FontBold='1' Text='$CAST_TOOL_EFFECT' HoriAlignment='1' VertAlignment='1' ColorX='512' ColorY='23' />
+				</Button>
+				<Button CmdID='CMD_BROADCAST_SAVE' Left='234' Top='0' Width='78' Height='30' ImageLeft='0' ImageTop='496'>
+					<Label FontName='#DEFAULT_UI_FONT' FontSize='11' FontBold='1' Text='$CAST_TOOL_SAVE' HoriAlignment='1' VertAlignment='1' ColorX='512' ColorY='23' />
+				</Button>
+			</Static>
+
+			<Static Align='Bottom' LeftMargin='100' RightMargin='20' TopMargin='0' BottomMargin='0' ImageLeft='3' ImageTop='1133' ImageWidth='320' ImageHeight='32' Height='32' >
+				<Button CmdID='CMD_BROADCAST_START' Left='-40' Top='6' Width='62' Height='22' ImageLeft='405' ImageTop='678' HoriCenter='1' />
+				<Button CmdID='CMD_BROADCAST_UPDATE' Left='-40' Top='6' Width='62' Height='22' ImageLeft='405' ImageTop='705' HoriCenter='1' />
+				<Button CmdID='CMD_BROADCAST_STOP' Left='28' Top='6' Width='62' Height='22' ImageLeft='405' ImageTop='759' HoriCenter='1' />
+				<Button CmdID='CMD_BROADCAST_PREVIEW' Left='28' Top='6' Width='62' Height='22' ImageLeft='405' ImageTop='732' HoriCenter='1' />
+				<Button CmdID='CMD_BROADCAST_ADV' Left='245' Top='6' Width='62' Height='22' ImageLeft='405' ImageTop='786' />
+			</Static>
+
+			<Static Align='Client' Contain='CMD_BROADCAST_TOOL' />
+		</Control>
+
+		<Common>
+			<BroadcastDevice0 Left='0' Top='236' Width='102' Height='29' PosX='7' PosY='6' />
+			<BroadcastDevice1 Left='0' Top='275' Width='102' Height='29' PosX='108' PosY='6' />
+			<BroadcastDevice2 Left='0' Top='314' Width='96' Height='29' PosX='209' PosY='6' />
+			<BroadcastDevice3 Left='0' Top='353' Width='102' Height='29' PosX='7' PosY='34' />
+			<BroadcastDevice4 Left='0' Top='392' Width='102' Height='29' PosX='108' PosY='34' />
+			<BroadcastDevice5 Left='0' Top='431' Width='96' Height='29' PosX='209' PosY='34' />
+			<BroadcastBkgndColor Left='150' Top='1000' />
+			<BroadcastHotTextColor Left='60' Top='110' />
+			<BroadcastButton Left='405' Top='813' Width='62' Height='21' />
+			<BroadcastFileBkgnd Left='311' Top='193' Width='299' Height='26' LeftMargin='100' RightMargin='10' TopMargin='7' />
+			<BroadcastFileDel Left='-33' Top='6' Width='25' Height='13' ImageLeft='323' ImageTop='646' />
+			<BroadcastFileAdd Left='-61' Top='6' Width='25' Height='13' ImageLeft='214' ImageTop='646' />
+			<BroadcastFileImage1 Left='-68' Top='8' Width='2' Height='11' ImageLeft='208' ImageTop='647' />
+			<BroadcastFileLast Left='-85' Top='8' Width='12' Height='12' ImageLeft='156' ImageTop='647' />
+			<BroadcastFileFirst Left='-98' Top='8' Width='12' Height='12' ImageLeft='104' ImageTop='647' />
+			<BroadcastFileDown Left='-111' Top='8' Width='12' Height='12' ImageLeft='52' ImageTop='647' />
+			<BroadcastFileUp Left='-124' Top='8' Width='12' Height='12' ImageLeft='0' ImageTop='647' />
+			<BroadcastFileImage2 Left='0' Top='0' Width='0' Height='0' ImageLeft='0' ImageTop='0' />
+			<BroadcastEffectPosBkgnd Left='0' Top='105' Width='45' Height='38' />
+			<BroadcastEffectPosBtn0 Left='2' Top='2' Width='14' Height='11' ImageLeft='0' ImageTop='88' />
+			<BroadcastEffectPosBtn1 Left='16' Top='2' Width='14' Height='11' ImageLeft='56' ImageTop='88' />
+			<BroadcastEffectPosBtn2 Left='30' Top='2' Width='14' Height='11' ImageLeft='112' ImageTop='88' />
+			<BroadcastEffectPosBtn3 Left='2' Top='25' Width='14' Height='11' ImageLeft='168' ImageTop='88' />
+			<BroadcastEffectPosBtn4 Left='16' Top='25' Width='14' Height='11' ImageLeft='224' ImageTop='88' />
+			<BroadcastEffectPosBtn5 Left='30' Top='25' Width='14' Height='11' ImageLeft='280' ImageTop='88' />
+			<BroadcastEffectFontBkgnd Left='0' Top='193' Width='291' Height='23' LeftMargin='160' RightMargin='20' />
+			<BroadcastEffectFontBtn0 Left='9' Top='6' Width='19' Height='13' ImageLeft='0' ImageTop='162' />
+			<BroadcastEffectFontBtn1 Left='43' Top='6' Width='29' Height='13' ImageLeft='85' ImageTop='162' />
+			<BroadcastEffectFontBtn2 Left='87' Top='6' Width='48' Height='13' ImageLeft='210' ImageTop='162' />
+			<BroadcastEffectFontBtn3 Left='152' Top='6' Width='49' Height='13' ImageLeft='411' ImageTop='162' />
+		</Common>
+	</BroadcastToolSkinArea>	
+
+#if<SkinType!=OnlyTouch>
+	<PlaylistSkinArea Image='TouchPlaylist.png' AlphaMode='1' WidthLimit='220' HeightLimit='150'
+	  SelBkgndColorX='442' SelBkgndColorY='149' FrameColorX='442' FrameColorY='149'
+	  BkgndColor1X='442' BkgndColor1Y='184' BkgndColor2X='442' BkgndColor2Y='184'
+	  CurTextColorX='442' CurTextColorY='217' SelTextColorX='442' SelTextColorY='200' TextColorX='442' TextColorY='234' PlayedTextColorX='442' PlayedTextColorY='250'
+	  LineColorX='442' LineColorY='168'
+	  AlbumTabX='3' AlbumTabY='95' AlbumTabW='261' AlbumTabH='41' 
+	  AlbumTabBtnX='7' AlbumTabBtnY='361' AlbumTabBtnW='76' AlbumTabBtnH='41' AlbumTabBtnMargin='0'
+	  AlbumTabTextX='442' AlbumTabTextY='282' AlbumTabSelTextX='442' AlbumTabSelTextY='266' 
+	  AlbumTabDelX='0' AlbumTabDelY='0' AlbumTabDelW='0' AlbumTabDelH='0'
+	  AlbumTabAddX='8' AlbumTabAddY='483' AlbumTabAddW='31' AlbumTabAddH='26'
+	  AlbumTabLeftX='8' AlbumTabLeftY='412' AlbumTabLeftW='19' AlbumTabLeftH='26' 
+	  AlbumTabRightX='8' AlbumTabRightY='443' AlbumTabRightW='19' AlbumTabRightH='26' 
+	  AlbumTabPopupX='8' AlbumTabPopupY='514' AlbumTabPopupW='31' AlbumTabPopupH='26'
+	  AlbumTabFontSize='9'
+	  SearchIconX='95' SearchIconY='260' SearchIconW='17' SearchIconH='17'
+	  SearchIconSelX='114' SearchIconSelY='260' SearchIconSelW='17' SearchIconSelH='17'
+	  SearchIconRight='1'
+	  SearchBkgndColorX='24' SearchBkgndColorY='280' SearchSelBkgndColorX='64' SearchSelBkgndColorY='280'
+	  LeftMargin='6' RightMargin='6' TopMargin='6' BottomMargin='6' UseWindowFrame='0' >
+		<Control>
+
+			<Static Align='Top' LeftMargin='100' RightMargin='10' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageTop='10' ImageWidth='266' ImageHeight='44' Height='44' >
+				<Layout Align='Left' Width='10' />
+				<Label Align='Left' Width='100' ColorX='442' ColorY='334' FontName='#DEFAULT_UI_FONT' FontSize='15' FontBold='1' VertAlignment='1' Text='$PLAYLIST_TITLE' />
+				
+				<Layout Align='Right' Width='15' />	
+				<Button Align='Right' Tooltip='$CMD_CLOSE_WINDOW' CmdID='ID_PLAYLIST_WINDOW' Width='14' ImageLeft='272' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='15' />				
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='15' />			
+				<#CONTROL1 Align='Right' Tooltip='$CMD_ATTACH_MAIN' CmdID='CMD_ATTACH_PLAYLIST' Width='14' ImageLeft='337' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<#CONTROL2 Align='Right' Width='15' />
+				<Slider Align='Right' CmdID='CMD_TRANS_PL' Image='Slider.png' OffsetTop='18' Width='50' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />
+			</Static>
+
+			<Static Align='Bottom' LeftMargin='10' RightMargin='10' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageTop='196' ImageWidth='266' ImageHeight='3' Height='3' />
+
+			<Static Align='Left' LeftMargin='0' RightMargin='0' TopMargin='50' BottomMargin='20' ImageLeft='0' ImageTop='54' ImageWidth='3' ImageHeight='142' Width='3' />
+			<Static Align='Right' LeftMargin='0' RightMargin='0' TopMargin='50' BottomMargin='20' ImageLeft='263' ImageTop='54' ImageWidth='3' ImageHeight='142' Width='3' />
+
+			<Static Align='Client' Contain='CMD_PLAYLIST_HOLDER'>
+				<Static Align='Bottom' LeftMargin='50' RightMargin='20' TopMargin='0' BottomMargin='0' ImageLeft='3' ImageTop='135' ImageWidth='260' ImageHeight='61' Height='61' >
+					<Layout Align='Left' Width='10' />
+					<Button CmdID='CMD_PLAYLIST_ADD' Align='Left' Width='39' ImageLeft='7' ImageTop='308' ImageWidth='39' ImageHeight='38' HoriAlignment='1' VertAlignment='1' />					
+					
+					<Layout Align='Left' Width='4' />
+					<Button CmdID='CMD_PLAYLIST_DEL' Align='Left' Width='39' ImageLeft='172' ImageTop='308' ImageWidth='39' ImageHeight='38' HoriAlignment='1' VertAlignment='1' />				
+					<Layout Align='Left' Width='10' />
+					
+					<Layout Align='Right' Width='8' />
+					<Label Align='Right' CmdID='CMD_PLAYLIST_TOTAL_TIME_MESSAGE' AutoVisible='1' AutoSize='1' Enabled='1' Width='6' ColorX='442' ColorY='234' FontName='#DEFAULT_UI_FONT' FontSize='14' HoriAlignment='1' VertAlignment='1' />
+					<Layout Align='Right' CmdID='CMD_PLAYLIST_TOTAL_TIME_MESSAGE' AutoVisible='1' Width='4' />					
+					<Image Align='Client' ImageLeft='7' ImageTop='260' ImageWidth='38' ImageHeight='38' LeftMargin='1' TopMargin='1' RightMargin='1' BottomMargin='1' OffsetTop='10' OffsetHeight='-20' >
+						<Layout Contain='CMD_PLAY_LIST_SEARCH' Align='Client' LeftOffset='1' TopOffset='1' WidthOffset='-2' HeightOffset='-2' />
+					</Image>
+					
+				</Static>
+				<Static Align='Client' Contain='CMD_PLAY_LIST_ALBUM_TAB' />
+			</Static>
+
+		</Control>
+	</PlaylistSkinArea>	
+#else
+	<PlaylistSkinArea Image='PlayList.png' AlphaMode='1' WidthLimit='300' HeightLimit='250'
+	  SelBkgndColorX='518' SelBkgndColorY='14' FrameColorX='518' FrameColorY='14'
+	  BkgndColor1X='518' BkgndColor1Y='48' BkgndColor2X='518' BkgndColor2Y='48'
+	  CurTextColorX='518' CurTextColorY='81' SelTextColorX='518' SelTextColorY='64' TextColorX='518' TextColorY='98' PlayedTextColorX='518' PlayedTextColorY='114'
+	  LineColorX='518' LineColorY='48'
+	  AlbumTabX='0' AlbumTabY='141' AlbumTabW='85' AlbumTabH='31'
+	  AlbumTabBtnX='0' AlbumTabBtnY='141' AlbumTabBtnW='85' AlbumTabBtnH='31' AlbumTabBtnMargin='0'
+	  AlbumTabTextX='518' AlbumTabTextY='146' AlbumTabSelTextX='518' AlbumTabSelTextY='130' 
+	  AlbumTabDelX='0' AlbumTabDelY='121' AlbumTabDelW='10' AlbumTabDelH='9'
+	  AlbumTabLeftX='253' AlbumTabLeftY='55' AlbumTabLeftW='19' AlbumTabLeftH='18'
+	  AlbumTabRightX='253' AlbumTabRightY='74' AlbumTabRightW='19' AlbumTabRightH='18' 
+	  AlbumTabPopupX='253' AlbumTabPopupY='93' AlbumTabPopupW='19' AlbumTabPopupH='18'
+	  AlbumTabFontSize='9'
+	  SearchIconX='0' SearchIconY='93' SearchIconW='15' SearchIconH='16'
+	  SearchIconRight='1'
+	  SearchIconSelX='16' SearchIconSelY='93' SearchIconSelW='15' SearchIconSelH='16'
+	  LeftMargin='6' RightMargin='6' TopMargin='6' BottomMargin='6' UseWindowFrame='0' >
+		<Control>
+
+			<Static Align='Top' LeftMargin='100' RightMargin='10' Height='34' ImageLeft='0' ImageWidth='320' ImageTop='217' ImageHeight='34' AltImageLeft='342' AltImageTop='217' >
+				<Layout Align='Left' Width='10' />
+				<Label Align='Left' Width='100' ColorX='518' ColorY='64' FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' FontBold='1' VertAlignment='1' Text='$PLAYLIST_TITLE' />
+				
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Tooltip='$CMD_CLOSE_WINDOW' CmdID='ID_PLAYLIST_WINDOW' Width='14' ImageLeft='260' ImageTop='16' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_TOPMOST_WINDOW' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Layout Align='Right' Width='10' />
+				<#CONTROL1 Align='Right' Tooltip='$CMD_ATTACH_MAIN' CmdID='CMD_ATTACH_PLAYLIST' Width='14' ImageLeft='323' ImageTop='16' Width='14' Height='14' />
+				<#CONTROL2 Align='Right' Width='10' />
+				<Slider Align='Right' CmdID='CMD_TRANS_PL' Image='Slider.png' OffsetTop='13' Width='50' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />
+			</Static>
+
+			<Static Align='Bottom' LeftMargin='10' RightMargin='10' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageWidth='320' ImageTop='473' ImageHeight='3' Height='3' AltImageLeft='342' AltImageTop='473' />
+
+			<Static Align='Left' LeftMargin='0' RightMargin='0' TopMargin='150' BottomMargin='20' ImageLeft='0' ImageWidth='3' ImageTop='251' ImageHeight='222' Width='3' AltImageLeft='342' AltImageTop='251' />
+			<Static Align='Right' LeftMargin='0' RightMargin='0' TopMargin='150' BottomMargin='20' ImageLeft='317' ImageWidth='3' ImageTop='251' ImageHeight='222' Width='3' AltImageLeft='659' AltImageTop='251' />
+
+			<Static Align='Client' Contain='CMD_PLAYLIST_HOLDER'>
+				<Static Align='Bottom' LeftMargin='250' RightMargin='20' TopMargin='0' BottomMargin='0' ImageLeft='3' ImageWidth='314' ImageTop='432' ImageHeight='41' Height='41'>
+					<Layout Align='Left' Width='8' />
+					<Button Tooltip='$CMD_PLAYLIST_TOP' CmdID='CMD_PLAYLIST_TOP' Align='Left' Width='25' ImageLeft='160' ImageTop='55' ImageWidth='21' ImageHeight='18' HoriAlignment='1' VertAlignment='1' OffsetTop='1' />
+					<Button Tooltip='$CMD_PLAYLIST_UP' CmdID='CMD_PLAYLIST_UP' Align='Left' Width='25' ImageLeft='160' ImageTop='74' ImageWidth='21' ImageHeight='18' HoriAlignment='1' VertAlignment='1' OffsetTop='1' />
+					<Button Tooltip='$CMD_PLAYLIST_DOWN' CmdID='CMD_PLAYLIST_DOWN' Align='Left' Width='25' ImageLeft='160' ImageTop='93' ImageWidth='21' ImageHeight='18' HoriAlignment='1' VertAlignment='1' OffsetTop='1' />
+					<Button Tooltip='$CMD_PLAYLIST_BOTTOM' CmdID='CMD_PLAYLIST_BOTTOM' Align='Left' Width='25' ImageLeft='160' ImageTop='112' ImageWidth='21' ImageHeight='18' HoriAlignment='1' VertAlignment='1' OffsetTop='1' />
+					<Layout Align='Left' Width='8' />
+
+					<Button CmdID='CMD_PLAYLIST_ADD' AutoSize='1' LeftMargin='5' RightMargin='5' Align='Left' Width='35' ImageLeft='0' ImageTop='58' ImageWidth='35' ImageHeight='18' HoriAlignment='1' VertAlignment='1' OffsetTop='1' >
+						<Layout Width='5' />
+						<Label FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' Text='$PLAYLIST_ADD' HoriAlignment='1' VertAlignment='1' ColorX='518' ColorY='164' OverColorX='518' OverColorY='198' PushColorX='518' PushColorY='180' OffsetTop='1' />
+						<Layout Width='5' />
+					</Button>
+					<Layout Align='Left' Width='4' />
+					<Button CmdID='CMD_PLAYLIST_DEL' AutoSize='1' LeftMargin='5' RightMargin='5' Align='Left' Width='35' ImageLeft='0' ImageTop='58' ImageWidth='35' ImageHeight='18' HoriAlignment='1' VertAlignment='1' OffsetTop='1' >
+						<Layout Width='5' />
+						<Label FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' Text='$PLAYLIST_DEL' HoriAlignment='1' VertAlignment='1' ColorX='518' ColorY='164' OverColorX='518' OverColorY='198' PushColorX='518' PushColorY='180' OffsetTop='1' />
+						<Layout Width='5' />
+					</Button>
+					<Layout Align='Left' Width='4' />
+					<Button Align='Left' CmdID='CMD_PLAYLIST_MENU_SORT' AutoSize='1' LeftMargin='5' RightMargin='5' AutoSize='1' Width='35' ImageLeft='0' ImageTop='58' ImageWidth='35' ImageHeight='18' HoriAlignment='1' VertAlignment='1' OffsetTop='1' >
+						<Layout Width='5' />
+						<Label FontName='#DEFAULT_UI_FONT' AutoSize='1' FontSize='11' Text='$PLAYLIST_SORT' HoriAlignment='1' VertAlignment='1' ColorX='518' ColorY='164' OverColorX='518' OverColorY='198' PushColorX='518' PushColorY='180' OffsetTop='1' />
+						<Layout Width='5' />
+					</Button>
+					<Layout Align='Left' Width='4' />
+					
+					<Layout Align='Right' Width='8' />
+					<Label Align='Right' CmdID='CMD_PLAYLIST_TOTAL_TIME_MESSAGE' AutoVisible='1' AutoSize='1' Enabled='1' Width='5' ColorX='518' ColorY='98' FontName='#DEFAULT_UI_FONT' FontSize='11' HoriAlignment='1' VertAlignment='1' />
+					<Layout Align='Right' CmdID='CMD_PLAYLIST_TOTAL_TIME_MESSAGE' AutoVisible='1' Width='4' />
+
+					<Image Align='Client' ImageLeft='33' ImageTop='87' ImageWidth='110' ImageHeight='29' LeftMargin='2' TopMargin='2' RightMargin='2' BottomMargin='2' OffsetTop='7' OffsetHeight='-13'  >
+						<Layout Contain='CMD_PLAY_LIST_SEARCH' Align='Client' LeftOffset='2' TopOffset='2' WidthOffset='-4' HeightOffset='-4' />
+					</Image>
+					
+				</Static>
+				<Static Align='Client' Contain='CMD_PLAY_LIST_ALBUM_TAB' />
+			</Static>
+
+		</Control>
+	</PlaylistSkinArea>	
+#endif
+
+	<1stCaptureSkinArea Image='ScrCapture.png' AlphaMode='1' WidthLimit='205' HeightLimit='30' >
+		<Control>
+			<Static Align='Top' LeftMargin='100' RightMargin='5' Height='34' ImageLeft='0' ImageTop='118' ImageWidth='326' ImageHeight='34' AltImageLeft='335' AltImageTop='118' >
+				<Layout Align='Left' Width='10' />
+				<Button Align='Left' Width='11' Tooltip='$CMD_CAPTURE1ST_SELECT' CmdID='CMD_CAPTURE1ST_SELECT_ON' ImageLeft='0' ImageTop='43' ImageWidth='7' ImageHeight='6' />
+				<Button Align='Left' Width='11' Tooltip='$CMD_CAPTURE1ST_SELECT' CmdID='CMD_CAPTURE1ST_SELECT_OFF' ImageLeft='37' ImageTop='43' ImageWidth='7' ImageHeight='6' />
+				
+				<Layout Align='Left' Width='5' />
+				<Label Align='Left' Width='100' ColorX='576' ColorY='90' FontName='#DEFAULT_UI_FONT' AutoSize='11' FontSize='11' FontBold='1' VertAlignment='1' Text='$SCREEN_CAP1_TITLE' />
+				
+				<Layout Align='Left' Width='10' />
+				<Button Align='Left' Width='24' Tooltip='$CMD_CAPTURE2ND_SHOW' CmdID='CMD_CAPTURE2ND_SHOW' ImageLeft='0' ImageTop='66' ImageWidth='23' ImageHeight='18' />
+				<Button Align='Left' Width='24' Tooltip='$CMD_CAPTURE2ND_HIDE' CmdID='CMD_CAPTURE2ND_HIDE' ImageLeft='101' ImageTop='66' ImageWidth='23' ImageHeight='18' />
+				
+				<Layout Align='Left' Width='10' />
+				<Button Align='Left' Width='22' Tooltip='$CMD_CAPTURE1ST_PRIMARY' CmdID='CMD_CAPTURE1ST_PRIMARY_ON' ImageLeft='283' ImageTop='69' ImageWidth='18' ImageHeight='13' />
+				<Button Align='Left' Width='22' Tooltip='$CMD_CAPTURE1ST_PRIMARY' CmdID='CMD_CAPTURE1ST_PRIMARY_OFF' ImageLeft='202' ImageTop='69' ImageWidth='18' ImageHeight='13' />
+
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE1ST_HIDE' CmdID='CMD_CAPTURE1ST_HIDE' ImageLeft='390' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' CmdID='CMD_CAPTURE1ST_TOP_MOST' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_CAPTURE1ST_TOP_MOST' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_FULLSCREEN' CmdID='CMD_CAPTURE1ST_FULLSCREEN' ImageLeft='260' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_NORMALSCREEN' CmdID='CMD_CAPTURE1ST_NORMALSCREEN' ImageLeft='195' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_OPTIMIZE_SIZE' CmdID='CMD_CAPTURE1ST_OPTIMIZE_SIZE' ImageLeft='130' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				
+				<Layout Align='Right' Width='15' VisParentMinWidth='2' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_FINDWND' CmdID='CMD_CAPTURE1ST_FINDWND' ImageLeft='65' ImageTop='20' ImageWidth='14' ImageHeight='13' VisParentMinWidth='2' />
+				
+				<Layout Align='Right' Width='10' VisParentMinWidth='2' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_PIP_SETTING' CmdID='CMD_CAPTURE_PIP_SETTING' ImageLeft='0' ImageTop='20' ImageWidth='14' ImageHeight='13' VisParentMinWidth='2' />
+				
+			</Static>			
+
+			<Static Align='Bottom' LeftMargin='5' RightMargin='5' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageWidth='326' ImageTop='240' ImageHeight='3' Height='3' AltImageLeft='335' AltImageTop='240' />
+
+			<Static Align='Left' LeftMargin='0' RightMargin='0' TopMargin='5' BottomMargin='5' ImageLeft='0' ImageWidth='3' ImageTop='152' ImageHeight='96' Width='3' AltImageLeft='335' AltImageTop='152' />
+   			<Static Align='Right' LeftMargin='0' RightMargin='0' TopMargin='5' BottomMargin='5' ImageLeft='323' ImageWidth='3' ImageTop='152' ImageHeight='96' Width='3' AltImageLeft='658' AltImageTop='152' />
+		</Control>
+	</1stCaptureSkinArea>
+
+	<2ndCaptureSkinArea Image='ScrCapture.png' AlphaMode='1' WidthLimit='205' HeightLimit='30'>
+		<Control>
+			<Static Align='Top' LeftMargin='100' RightMargin='5' Height='34' ImageLeft='0' ImageTop='118' ImageWidth='326' ImageHeight='34' AltImageLeft='335' AltImageTop='118' >
+				<Layout Align='Left' Width='10' />
+				<Button Align='Left' Width='11' Tooltip='$CMD_CAPTURE2ND_SELECT' CmdID='CMD_CAPTURE2ND_SELECT_ON' ImageLeft='0' ImageTop='43' ImageWidth='7' ImageHeight='6' />
+				<Button Align='Left' Width='11' Tooltip='$CMD_CAPTURE2ND_SELECT' CmdID='CMD_CAPTURE2ND_SELECT_OFF' ImageLeft='37' ImageTop='43' ImageWidth='7' ImageHeight='6' />				
+				
+				<Layout Align='Left' Width='5' />
+				<Label Align='Left' Width='100' ColorX='576' ColorY='90' FontName='#DEFAULT_UI_FONT' AutoSize='11' FontSize='11' FontBold='1' VertAlignment='1' Text='$SCREEN_CAP2_TITLE' />
+			
+				<Layout Align='Left' Width='10' />
+				<Button Align='Left' Width='24' Tooltip='$CMD_CAPTURE1ST_SHOW' CmdID='CMD_CAPTURE1ST_SHOW' ImageLeft='0' ImageTop='66' ImageWidth='23' ImageHeight='18' />
+				<Button Align='Left' Width='24' Tooltip='$CMD_CAPTURE1ST_HIDE' CmdID='CMD_CAPTURE1ST_HIDE' ImageLeft='101' ImageTop='66' ImageWidth='23' ImageHeight='18' />
+				
+				<Layout Align='Left' Width='10' />
+				<Button Align='Left' Width='22' Tooltip='$CMD_CAPTURE2ND_PRIMARY' CmdID='CMD_CAPTURE2ND_PRIMARY_ON' ImageLeft='283' ImageTop='69' ImageWidth='18' ImageHeight='13' />
+				<Button Align='Left' Width='22' Tooltip='$CMD_CAPTURE2ND_PRIMARY' CmdID='CMD_CAPTURE2ND_PRIMARY_OFF' ImageLeft='283' ImageTop='69' ImageWidth='18' ImageHeight='13' />
+				
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE2ND_HIDE' CmdID='CMD_CAPTURE2ND_HIDE' ImageLeft='390' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' CmdID='CMD_CAPTURE2ND_TOP_MOST' AutoVisible='-1' Width='14' Image='Slider.png' ImageLeft='0' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' CmdID='CMD_CAPTURE2ND_TOP_MOST' AutoVisible='1' Width='14' Image='Slider.png' ImageLeft='65' ImageTop='10' ImageWidth='14' ImageHeight='13' />
+				
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_FULLSCREEN' CmdID='CMD_CAPTURE2ND_FULLSCREEN' ImageLeft='260' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_NORMALSCREEN' CmdID='CMD_CAPTURE2ND_NORMALSCREEN' ImageLeft='195' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_OPTIMIZE_SIZE' CmdID='CMD_CAPTURE2ND_OPTIMIZE_SIZE' ImageLeft='130' ImageTop='20' ImageWidth='14' ImageHeight='13' />
+				
+				<Layout Align='Right' Width='15' VisParentMinWidth='2' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_FINDWND' CmdID='CMD_CAPTURE2ND_FINDWND' ImageLeft='65' ImageTop='20' ImageWidth='14' ImageHeight='13' VisParentMinWidth='2' />
+				
+				<Layout Align='Right' Width='10' VisParentMinWidth='2' />
+				<Button Align='Right' Width='14' Tooltip='$CMD_CAPTURE_PIP_SETTING' CmdID='CMD_CAPTURE_PIP_SETTING' ImageLeft='0' ImageTop='20' ImageWidth='14' ImageHeight='13' VisParentMinWidth='2' />
+
+			</Static>
+			
+			<Static Align='Bottom' LeftMargin='5' RightMargin='5' TopMargin='0' BottomMargin='0' ImageLeft='0' ImageWidth='326' ImageTop='240' ImageHeight='3' Height='3' AltImageLeft='335' AltImageTop='240' />
+
+			<Static Align='Left' LeftMargin='0' RightMargin='0' TopMargin='5' BottomMargin='5' ImageLeft='0' ImageWidth='3' ImageTop='152' ImageHeight='96' Width='3' AltImageLeft='335' AltImageTop='152' />
+  			<Static Align='Right' LeftMargin='0' RightMargin='0' TopMargin='5' BottomMargin='5' ImageLeft='323' ImageWidth='3' ImageTop='152' ImageHeight='96' Width='3' AltImageLeft='658' AltImageTop='152' />
+		</Control>
+	</2ndCaptureSkinArea>
+
+	<WindowSkinArea Image='Window.png' UseWindowFrame='0'>
+		<Common>
+			<BtnPosition Left='0' Top='52' Width='39' Height='21' />
+			<AltBtnPosition Left='0' Top='52' Width='39' Height='21' />
+			<TabPosition Left='0' Top='93' Width='70' Height='26' Margin=-1 />
+			<AltTabPosition Left='277' Top='672' Width='65' Height='22' />
+			<BtnTextColor Left='180' Top='57' />
+			<TabTextColor Left='305' Top='98' />
+			<WindowType0 Left='0' Top='139' Width='307' Height='158' LeftDrawMargin='12' TopDrawMargin='60' RightDrawMargin='12' BottomDrawMargin='35' AltLeft='316' AltTop='139'
+				BottomMargin='32'
+				LeftSkinMargin='3' TopSkinMargin='34' RightSkinMargin='3' BottomSkinMargin='3' 
+				FontName='#DEFAULT_UI_FONT' FontSize='9' FontPosLeft='10' FontPosTop='10000' FontColorLeft='322' FontColorTop='966' FontColorAltLeft='322' FontColorAltTop='983' />
+			<WindowType1 Left='0' Top='306' Width='307' Height='158' LeftDrawMargin='12' TopDrawMargin='60' RightDrawMargin='12' BottomDrawMargin='35' AltLeft='316' AltTop='306'
+				TopMargin='26' BottomMargin='32'
+				LeftSkinMargin='3' TopSkinMargin='34' RightSkinMargin='3' BottomSkinMargin='3' 
+				FontName='#DEFAULT_UI_FONT' FontSize='9' FontPosLeft='10' FontPosTop='10000' FontColorLeft='322' FontColorTop='966' FontColorAltLeft='322' FontColorAltTop='983' />
+			<WindowType2 Left='0' Top='473' Width='307' Height='147' LeftDrawMargin='12' TopDrawMargin='60' RightDrawMargin='12' BottomDrawMargin='35' AltLeft='316' AltTop='473'
+				LeftSkinMargin='3' TopSkinMargin='34' RightSkinMargin='3' BottomSkinMargin='3' 
+				FontName='#DEFAULT_UI_FONT' FontSize='9' FontPosLeft='10' FontPosTop='10000' FontColorLeft='322' FontColorTop='966' FontColorAltLeft='322' FontColorAltTop='983' />
+			<CloseBtn Left='260' Top='10' Width='14' Height='13' Align='Right' />
+			<SetupBtn Left='390' Top='10' Width='14' Height='13' />
+			<TopMostBtn Left='65' Top='33' Width='14' Height='13' />
+			<NonTopMostBtn Left='0' Top='33' Width='14' Height='13' />
+			<LoginTitle Left='0' Top='639' Width='28' Height='13' />
+			<LoginFindIDBtn Left='257' Top='790' Width='65' Height='18' />
+			<LoginFindPWBtn Left='257' Top='770' Width='76' Height='18' />
+			<LoginInfo Left='0' Top='0' Width='0' Height='0' />
+			<LoginError Left='44' Top='757' Width='203' Height='14' />
+			<LoginIp Left='0' Top='713' Width='53' Height='16' />
+			<LoginBtn Left='170' Top='718' Width='56' Height='20' />
+			<LoginNewBtn Left='0' Top='790' Width='52' Height='18' />
+			<LoginNewMark Left='0' Top='0' Width='0' Height='0' />
+			<MessageColorPos Left='180' Top='57' />
+			<MessageHotColorPos Left='305' Top='98' />
+			<MessageIconType0 Left='0' Top='828' Width='33' Height='32' />
+			<MessageIconType1 Left='33' Top='828' Width='33' Height='32' />
+			<MessageIconType2 Left='66' Top='828' Width='33' Height='32' />
+			<MessageIconType3 Left='99' Top='828' Width='33' Height='32' />
+			<MessageIconTypeP Left='306' Top='828' Width='30' Height='30' />
+			<MessageGrade15 Left='0' Top='974' Width='65' Height='77' />
+			<MessageGrade18 Left='74' Top='974' Width='65' Height='77' />
+			<MessageGrade19 Left='148' Top='974' Width='65' Height='77' />
+			<MessageGradeNone Left='222' Top='974' Width='65' Height='77' />
+			#if<CodePage==949>
+				<AboutIcon Left='149' Top='827' Width='63' Height='63' PosX='53' PosY='80' />
+				<AutoUpdateLogo Left='0' Top='896' Width='297' Height='34' PosX='5' PosY='35' />
+				<LoginLogo Left='60' Top='625' Width='200' Height='36' />				
+			#else	
+				<AboutIcon Left='230' Top='827' Width='63' Height='63' PosX='53' PosY='80' />
+				<AutoUpdateLogo Left='0' Top='932' Width='297' Height='34' PosX='5' PosY='35' />
+				<LoginLogo Left='30' Top='670' Width='200' Height='35' />
+			#endif
+		</Common>
+	</WindowSkinArea>

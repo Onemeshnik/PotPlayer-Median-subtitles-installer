@@ -1,0 +1,71 @@
+﻿<?XML version='1.0' ?>
+
+<Skin Version='1.0' MinorVersion='1000'>
+
+	#include<Common.txt>
+
+#if<SkinType==Touch>
+	<MainSkinAreaOscFrame WidthLimit='380'
+#else
+	<MainSkinAreaOscFrame WidthLimit='320'
+#endif
+		HeightLimit='0' Image='Main.png' AlphaMode='1' UseWindowFrame='0' >
+		#include<Logo.txt>
+		<Control>
+
+			    <ImageReplace Image='TouchMain.png' AlphaMode='1'>
+					<Static Align='Top' LeftMargin='20' RightMargin='20' ImageLeft='0' ImageTop='671' ImageWidth='576' ImageHeight='3' Height='3' IsTitleBar='1' />
+					<Static Align='Bottom' LeftMargin='20' RightMargin='340' ImageLeft='0' ImageTop='857' ImageWidth='576' ImageHeight='3' Height='3' />
+					<Static Align='Left' TopMargin='42' BottomMargin='84' ImageLeft='0' ImageTop='674' ImageWidth='3' ImageHeight='183' Width='3' />
+					<Static Align='Right' TopMargin='42' BottomMargin='84' ImageLeft='572' ImageTop='674' ImageWidth='3' ImageHeight='183' Width='3' />
+				</ImageReplace>
+				#include<TouchRight.txt>
+
+
+			<Static Align='Client' Contain='CMD_VIDEO_WINDOW' />
+		</Control>
+	</MainSkinAreaOscFrame>
+	<MainSkinAreaOscInside Image='Main.png'>
+		#include<Logo.txt>
+		<Control>
+
+				#include<TouchTop.txt>
+				#include<TopCast.txt>
+				#include<TouchBottom.txt>
+
+			#endif
+			#include<Popup.txt>
+			#if<SkinName!=WdmSkin>
+				#include<BottomVod.txt>
+			#endif
+		</Control>
+	</MainSkinAreaOscInside>
+
+	<MainSkinArea WidthLimit='380'
+
+		HeightOffset='-1' HeightLimit='0' Image='Main.png' AlphaMode='1' UseWindowFrame='0'>
+		#include<Logo.txt>
+		<Control>
+			    <ImageReplace Image='TouchMain.png' AlphaMode='1'>
+					<Static Align='Top' LeftMargin='20' RightMargin='20' ImageLeft='0' ImageTop='671' ImageWidth='575' ImageHeight='3' Height='3' IsTitleBar='1' />
+					<Static Align='Bottom' LeftMargin='20' RightMargin='340' ImageLeft='0' ImageTop='857' ImageWidth='575' ImageHeight='3' Height='3' />
+					<Static Align='Left' TopMargin='42' BottomMargin='84' ImageLeft='0' ImageTop='674' ImageWidth='3' ImageHeight='183' Width='3' />
+					<Static Align='Right' TopMargin='42' BottomMargin='84' ImageLeft='572' ImageTop='674' ImageWidth='3' ImageHeight='183' Width='3' />
+				</ImageReplace>
+				#include<TouchTop.txt>
+				#include<TouchRight.txt>
+				#include<TopCast.txt>
+				#include<TouchBottom.txt>
+
+
+			#include<Popup.txt>
+			#if<SkinName!=WdmSkin>
+				#include<BottomVod.txt>
+			#endif
+			<Static Align='Client' Contain='CMD_VIDEO_WINDOW' />
+		</Control>
+	</MainSkinArea>
+
+	#include<SubCommon.txt #CONTROL1=Button #CONTROL2=Layout>
+
+</Skin>

@@ -1,0 +1,80 @@
+﻿			<Static Image='TouchMain.png' Align='Bottom' State='' LeftMargin='20' RightMargin='20' ImageLeft='3' ImageTop='797' ImageWidth='306' ImageHeight='60' Height='60' >
+				
+				#if<SkinName==WdmSkin>
+					<Button Tooltip='$ID_WDM_FORCE_PREV_CH' CmdID='ID_PROCESS_NEXT' AltCmdID='ID_WDM_FORCE_PREV_CH' Left='0' Top='0' Width='61' Height='60' ImageLeft='0' ImageTop='946' />
+				#else
+					<Button Tooltip='$ID_PLAYBACK_5SEC_BACK_PREV' CmdID='ID_PLAYBACK_5SEC_BACK' AltCmdID='ID_PROCESS_PREV' Left='0' Top='0' Width='61' Height='60' ImageLeft='0' ImageTop='63' />
+				#endif	
+				<Button Tooltip='$CMD_MEDIA_PLAY' CmdID='CMD_MEDIA_PLAY' Left='61' Top='0' Width='61' Height='60' ImageLeft='0' ImageTop='124' />
+				<Button Tooltip='$CMD_MEDIA_PAUSE' CmdID='CMD_MEDIA_PAUSE' Left='61' Top='0' Width='61' Height='60' ImageLeft='0' ImageTop='307' />
+				<Button Tooltip='$CMD_MEDIA_CLOSE' CmdID='CMD_MEDIA_CLOSE' Left='122' Top='0' Width='61' Height='60' ImageLeft='0' ImageTop='185' />
+				#if<SkinName==WdmSkin>
+					<Button Tooltip='$ID_WDM_FORCE_NEXT_CH' CmdID='ID_PROCESS_PREV' AltCmdID='ID_WDM_FORCE_NEXT_CH' Left='183' Top='0' Width='61' Height='60' ImageLeft='0' ImageTop='1007' />
+				#else
+					<Button Tooltip='$ID_PLAYBACK_5SEC_FORW_NEXT' CmdID='ID_PLAYBACK_5SEC_FORW' AltCmdID='ID_PROCESS_NEXT' Left='183' Top='0' Width='61' Height='60' ImageLeft='0' ImageTop='246' />
+				#endif
+			
+
+
+				
+				<Button Image='Main.png' CmdID='CMD_VIDEO_OUT_HW_SW_MESSAGE' AutoEnable='1' Cursor='HAND' Left='250' OffsetTop='-10' Width='65' AutoVisible='1' AutoSize='1' ImageLeft='9999' ImageTop='9999' ImageWidth='41' ImageHeight='14' VisParentMinWidth='1013' Alignment='5' >
+
+					<Label CmdID='CMD_VIDEO_OUT_HW_SW_MESSAGE' AutoEnable='1' ColorX='509' ColorY='11' Width='55 ' FontName='Tahoma' FontSize='14' AutoSize='1' AutoVisible='1' VertAlignment='1' />
+				</Button>
+	         <Label CmdID='CMD_AUDIO_CODEC_TYPE_MESSAGE' Text='%s  ' AutoVisible='1' Left='240' AutoSize='1' Align='Left' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='14' HoriAlignment='1' VertAlignment='1' OffsetTop='10' OffsetLeft='250' />				
+				<Button Align='Right' Tooltip='Открыть плейлист | Закрепить плейлист' CmdID='ID_PLAYLIST_WINDOW' AltCmdID='CMD_ATTACH_PLAYLIST' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='490' ImageWidth='61' ImageHeight='60' VisParentMinWidth='165' />
+				<Button Align='Right' Tooltip='Настройки | Панель управления' CmdID='ID_OPTION_WINDOW' AltCmdID='ID_CONTROL_BOX_WINDOW' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='429' ImageWidth='61' ImageHeight='60' VisParentMinWidth='348' />
+				<Button Align='Right' Tooltip='$ID_OPEN_FILE' CmdID='ID_BASE_OPEN' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='368' ImageWidth='61' ImageHeight='60' VisParentMinWidth='409' />
+				#if<SkinName==DvdSkin>
+					<Button Align='Right' Tooltip='$CMD_POPUPMENU_DVD' CmdID='CMD_POPUP_USER_MENU' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='1188' ImageWidth='61' ImageHeight='60' VisParentMinWidth='660' UserMenuName='DvdPopupMenu' />	
+				#else
+					<!--Button Align='Right' Tooltip='$CMD_POPUPMENU_STREAM_SELECT' CmdID='CMD_POPUPMENU_STREAM_SELECT' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='1188' ImageWidth='61' ImageHeight='60' VisParentMinWidth='660' AutoVisible='1' /-->	
+				#endif
+				Button Align='Right' Tooltip='$CMD_TOUCH_LOCK' CmdID='CMD_TOUCH_LOCK' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='1127' ImageWidth='61' ImageHeight='60' VisParentMinWidth='730' 	
+				<Button Align='Right'  CmdID='CMD_POPUPMENU_FAVORITE' Tooltip='Избранное'  VertAlignment='0' Width='61' ImageLeft='246' ImageTop='1002' ImageWidth='61' ImageHeight='60' VisParentMinWidth='470' />						
+				<Button Align='Right'  CmdID='ID_CAPTION_SELECT_MENU' Tooltip='Выбор субтитров | Открыть субтитры' AltCmdID='ID_CAPTION_OPEN' VertAlignment='0' Width='61' ImageLeft='246' ImageTop='1064' ImageWidth='61' ImageHeight='60' VisParentMinWidth='531' />		
+				<Button Align='Right'  CmdID='ID_AUDIO_SELECT_MENU' Tooltip='Выбор аудиодорожки' AltCmdID='ID_VIDEO_AVISYNTH' VertAlignment='0' Width='61' ImageLeft='246' ImageTop='1125' ImageWidth='61' ImageHeight='60' VisParentMinWidth='592' />	
+				
+				<Button Align='Right' Tooltip='Выключить режим "кино"'  CmdID='CMD_SET_SKIN_STYLE' AutoVisible='1' SkinStyle='Cinema'  AltCmdID='ID_PLAYINFO_OSD' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='1310' ImageWidth='61' ImageHeight='60' VisParentMinWidth='653' />
+				<Button Align='Right' Tooltip='Включить режим "кино"'  CmdID='CMD_SET_SKIN_STYLE' AutoVisible='-1' SkinStyle='Cinema'  AltCmdID='ID_PLAYINFO_OSD' VertAlignment='0' Width='61' ImageLeft='246' ImageTop='1310' ImageWidth='61' ImageHeight='60' VisParentMinWidth='653' />				
+				<Button Align='Right'  CmdID='ID_CAPTION_STYLE_SET' Tooltip='Настройка субтитров'  VertAlignment='0' Width='61' ImageLeft='246' ImageTop='1187' ImageWidth='61' ImageHeight='60' VisParentMinWidth='714' />	
+				<Button Align='Right'  CmdID='CMD_POPUPMENU_VIDEO_AVISYNTH' Tooltip='Список AVS | Выключить AVS' AltCmdID='ID_VIDEO_AVISYNTH' VertAlignment='0' Width='61' ImageLeft='0' ImageTop='1249' ImageWidth='61' ImageHeight='60' VisParentMinWidth='775' />
+	
+	
+				<Button Align='Right'  CmdID='CMD_POPUPMENU_ETC' Tooltip='Выбор профиля'  VertAlignment='0' Width='61' ImageLeft='246' ImageTop='941' ImageWidth='61' ImageHeight='60' VisParentMinWidth='836' />				
+			</Static>
+			<Static Image='TouchMain.png' Align='Bottom' State='' LeftMargin='20' RightMargin='20' ImageLeft='3' ImageTop='765' ImageWidth='306' ImageHeight='32' Height='32' >
+			
+				#if<SkinName==WdmSkin>
+					<Button Image='Main.png' Tooltip='$ID_WDM_CH_SEL_MENU' Cursor='HAND' CmdID='ID_WDM_CH_SEL_MENU' Left='8' Top='0' Width='50' AutoSize='1' ImageLeft='485' ImageTop='34' ImageWidth='41' ImageHeight='14' Alignment='5' LeftMargin='3' RightMargin='3' >
+						<Layout Width='5' />
+						<Label CmdID='CMD_WDM_CHANNEL_MESSAGE' ColorX='864' ColorY='528' Width='50' Height='15' AutoSize='1' FontName='Tahoma' FontSize='11' Text='$CMD_WDM_CHANNEL_MESSAGE' OffsetTop='1' />
+						<Layout Width='5' />
+					</Button>
+					<Slider Left='60'>
+				#else
+					
+
+					#if<SkinStyle==Cinema>
+					#else
+					<Slider Left='8'
+
+				
+						CmdID='CMD_TIMEBAR_CTRL' Top='8' Width='-120' Height='20' ImageWidth='95' ImageHeight='20' 
+						ImageLeft='927' ImageTop='68' BackImageLeft='928' BackImageTop='48' AltImageLeft='927' AltImageTop='88'  
+						LeftMargin='10' RightMargin='10' RepeatAImageLeft='465' RepeatAImageTop='63' RepeatBImageLeft='477' RepeatBImageTop='63' RepeatImageWidth='11' RepeatImageHeight='14'
+						BookmarkImageLeft='489' BookmarkImageTop='63' SeamlessImageLeft='499' SeamlessImageTop='63'/>
+	-131 -71 -65		
+				<Label CmdID='CMD_CURRENTTIME_MESSAGE' ColorX='622' ColorY='666' Left='-285' Top='9' Width='73' Height='16' FontName='Verdana' FontSize='16' />
+				<Label CmdID='' ColorX='900' ColorY='10' Left='-209' Top='8' Width='10' Height='16' FontName='Verdana' FontSize='16' Text='/' />
+				<Label CmdID='CMD_TOTALTIME_MESSAGE' ColorX='900' ColorY='10' Left='-200' Top='9' Width='73' Height='16' FontName='Verdana' FontSize='16' />
+				#endif
+				<Label CmdID='CMD_TITLE_MESSAGE' Left='15' Top='9' Width='-300' ColorX='334' ColorY='110' UsingScroll='1' ScrollDistance='1' ScrollInterval='50' FontName='Verdana' FontSize='16' />
+				<Layout Align='Right' Width='10' />				
+				<Button Tooltip='Вкл/выкл звук | вкл/выкл усиление' CmdID='ID_AUDIO_MUTE' AltCmdID='ID_VOLUME_AC3DTS_AMP' Left='-115' Top='11' Width='17' Height='12' ImageLeft='283' ImageTop='63' />
+				<Slider CmdID='CMD_VOLUME_CTRL' Tooltip='Громкость проигрывателя' Left='-85' Top='0' Image='Slider.png' OffsetTop='6' Width='64' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />	
+				<Slider Tooltip='Громкость системы' CmdID='CMD_MASTER_VOLUME' Left='-85' Top='0' Image='Slider.png' OffsetTop='17' Width='64' ImageWidth='28' ImageHeight='8' ThumbWidth='15' ThumbHeight='8' ImageLeft='0' ImageTop='42' BackImageLeft='0' BackImageTop='30' ThumbImageLeft='0' ThumbImageTop='57' LeftMargin='5' RightMargin='5' />	
+				<Button Tooltip='Усилить' CmdID='ID_VOLUME_AC3DTS_INC' Left='-17' Top='5' Width='15' Height='10' ImageLeft='396' ImageTop='119' />
+				<Button Tooltip='Ослабить' CmdID='ID_VOLUME_AC3DTS_DEC' Left='-17' Top='17' Width='15' Height='10' ImageLeft='396' ImageTop='129' />				
+					
+			</Static>

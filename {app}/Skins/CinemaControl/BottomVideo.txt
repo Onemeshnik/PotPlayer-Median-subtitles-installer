@@ -1,0 +1,97 @@
+﻿			<Static Align='Bottom' Height='40' LeftMargin='10' RightMargin='10' TopMargin='0' BottomMargin='0' ImageLeft='3' ImageTop='690' ImageWidth='306' ImageHeight='40' AltImageLeft='371' AltImageTop='690' >
+				<Button Align='Left' Tooltip='$CMD_MEDIA_PLAY' CmdID='CMD_MEDIA_PLAY' Width='41' ImageLeft='0' ImageTop='259' ImageWidth='41' ImageHeight='40' />
+				<Button Align='Left' Tooltip='$CMD_MEDIA_PAUSE' CmdID='CMD_MEDIA_PAUSE' Width='41' ImageLeft='164' ImageTop='259' ImageWidth='41' ImageHeight='40' />
+				<Button Align='Left' Tooltip='$CMD_MEDIA_CLOSE' CmdID='CMD_MEDIA_CLOSE' Width='41' ImageLeft='0' ImageTop='300' ImageWidth='41' ImageHeight='40' />				
+				#if<SkinName==WdmSkin>
+					<Button Align='Left' Tooltip='$ID_WDM_FORCE_PREV_CH' CmdID='ID_PROCESS_PREV' AltCmdID='ID_WDM_FORCE_PREV_CH' Width='41' ImageLeft='328' ImageTop='259' ImageWidth='41' ImageHeight='40' />
+					<Button Align='Left' Tooltip='$ID_WDM_FORCE_NEXT_CH' CmdID='ID_PROCESS_NEXT' AltCmdID='ID_WDM_FORCE_NEXT_CH' Width='41' ImageLeft='492' ImageTop='259' ImageWidth='41' ImageHeight='40' />
+				#else
+					<Button Align='Left' Tooltip='$ID_PLAYBACK_5SEC_BACK_PREV' CmdID='ID_PLAYBACK_5SEC_BACK' AltCmdID='ID_PROCESS_PREV' Width='41' ImageLeft='164' ImageTop='300' ImageWidth='41' ImageHeight='40' />
+					<Button Align='Left' Tooltip='$ID_PLAYBACK_5SEC_FORW_NEXT' CmdID='ID_PLAYBACK_5SEC_FORW' AltCmdID='ID_PROCESS_NEXT' Width='41' ImageLeft='328' ImageTop='300' ImageWidth='41' ImageHeight='40' />
+				#endif
+				<Button Align='Left' Tooltip='$ID_OPEN_FILE' CmdID='ID_BASE_OPEN' Width='41' ImageLeft='0' ImageTop='341' ImageWidth='41' ImageHeight='40' />
+				
+				<Layout Align='Left' Width='10' />
+				<Label Align='Left' CmdID='CMD_CURRENTTIME_MESSAGE' ColorX='864' ColorY='528' Width='50' AutoSize='1' FontName='Tahoma' FontSize='11' VertAlignment='1' OffsetTop='1' />
+				<Layout Align='Left' Width='5' />
+				<Label Align='Left' CmdID='' ColorX='875' ColorY='528' Width='10' AutoSize='1' FontName='Tahoma' FontSize='11' Text='/' VertAlignment='1' OffsetTop='1' />
+				<Layout Align='Left' Width='5' />
+				<Label Align='Left' CmdID='CMD_TOTALTIME_MESSAGE' ColorX='875' ColorY='528' Width='50' AutoSize='1' FontName='Tahoma' FontSize='11' VertAlignment='1' OffsetTop='1' />
+				<Layout Align='Left' Width='5' />
+
+				<Button Align='Left' CmdID='CMD_VIDEO_OUT_HW_SW_MESSAGE' AutoEnable='1' Cursor='HAND' Width='65' AutoVisible='1' AutoSize='1' ImageLeft='485' ImageTop='34' ImageWidth='41' ImageHeight='14' VisParentMinWidth='460' Alignment='5' LeftMargin='3' RightMargin='3' OffsetTop='1' >
+					<Layout Width='5' />
+					<Label CmdID='CMD_VIDEO_OUT_HW_SW_MESSAGE' AutoEnable='1' ColorX='875' ColorY='528' Width='55' FontName='Tahoma' FontSize='11' AutoSize='1' AutoVisible='1' VertAlignment='1' />
+					<Layout Width='5' />
+				</Button>
+				
+				<Layout Align='Left' Width='5' VisParentMinWidth='630' />
+				<Button Align='Left' CmdID='CMD_VIDEO_CODEC_FOURCC_MESSAGE' Enabled='0' Width='65' AutoVisible='1' AutoSize='1' ImageLeft='485' ImageTop='34' ImageWidth='41' ImageHeight='14' VisParentMinWidth='630' Alignment='5' LeftMargin='3' RightMargin='3' OffsetTop='1' >
+					<Layout Width='5' />
+					<Label CmdID='CMD_VIDEO_CODEC_FOURCC_MESSAGE' ColorX='875' ColorY='528' Width='55' FontName='Tahoma' FontSize='11' AutoSize='1' AutoVisible='1' VertAlignment='1' />
+					<Layout Width='5' />
+				</Button>
+
+				<Layout Align='Left' Width='5' VisParentMinWidth='670' />
+				<Button Align='Left' CmdID='CMD_AUDIO_CODEC_TYPE_MESSAGE' Enabled='0' Width='65' AutoVisible='1' AutoSize='1' ImageLeft='485' ImageTop='34' ImageWidth='41' ImageHeight='14' VisParentMinWidth='670' Alignment='5' LeftMargin='3' RightMargin='3' OffsetTop='1' >
+					<Layout Width='5' />
+					<Label CmdID='CMD_AUDIO_CODEC_TYPE_MESSAGE' ColorX='875' ColorY='528' Width='55' FontName='Tahoma' FontSize='11' AutoSize='1' AutoVisible='1' VertAlignment='1' />
+					<Layout Width='5' />
+				</Button>
+				
+				<Button Align='Right' Tooltip='$CMD_ATTACH_WINDOW_OPEN' CmdID='CMD_ATTACH_WINDOW_OPEN' Width='41' ImageLeft='164' ImageTop='341' ImageWidth='41' ImageHeight='40' VisMinLeft='320' />
+				<Button Align='Right' Tooltip='$CMD_ATTACH_WINDOW_CLOSE' CmdID='CMD_ATTACH_WINDOW_CLOSE' Width='41' ImageLeft='164' ImageTop='341' ImageWidth='41' ImageHeight='40' VisMinLeft='320' />	
+				<Layout Align='Right' Width='10' />
+				<Button Align='Right' Tooltip='$ID_CONTROL_BOX_WINDOW' CmdID='ID_CONTROL_BOX_WINDOW' DownFlag='1' Width='23' ImageLeft='303' ImageTop='391' ImageWidth='23' ImageHeight='22' VisMinLeft='320' />
+				<Layout Align='Right' Width='8' />
+				<Button Align='Right' Tooltip='$ID_PLAYLIST_WINDOW' CmdID='ID_PLAYLIST_WINDOW' DownFlag='1' Width='23' ImageLeft='202' ImageTop='391' ImageWidth='23' ImageHeight='22' VisMinLeft='320' />
+				<Layout Align='Right' Width='8' />
+				<Button Align='Right' Tooltip='$MAIN_USE_EXPLORER' CmdID='CMD_USE_EXPLORER' DownFlag='1' AutoVisible='100' Width='23' ImageLeft='0' ImageTop='423' ImageWidth='23' ImageHeight='22' VisMinLeft='350' />
+			#if<SkinName==VideoSkin>
+				<Layout Align='Right' Width='8' />
+				<Button Align='Right' Tooltip='$CMD_POPUPMENU_VIDEO_3D' CmdID='CMD_POPUPMENU_VIDEO_3D' Width='23' ImageLeft='101' ImageTop='455' ImageWidth='23' ImageHeight='22' VisMinLeft='350' AutoVisible='1' PopupMenuStyle='1' />
+				<Layout Align='Right' Width='8' />
+				<Button Align='Right' Tooltip='$CMD_POPUPMENU_VIDEO_360VR' CmdID='CMD_POPUPMENU_VIDEO_360VR' Width='23' ImageLeft='0' ImageTop='455' ImageWidth='23' ImageHeight='22' VisMinLeft='350' AutoVisible='1' PopupMenuStyle='1' />
+			#endif
+			#if<SkinName==DvdSkin>
+				<Layout Align='Right' Width='8' />
+				<Button Align='Right' Tooltip='$CMD_POPUPMENU_DVD' CmdID='CMD_POPUP_USER_MENU' Width='23' ImageLeft='202' ImageTop='455' ImageWidth='23' ImageHeight='22' VisMinLeft='350' UserMenuName='DvdPopupMenu' />
+			#else
+				<Layout Align='Right' Width='8' CmdID='CMD_POPUPMENU_STREAM_SELECT' AutoVisible='1' />
+				<Button Align='Right' Tooltip='$CMD_POPUPMENU_STREAM_SELECT' CmdID='CMD_POPUPMENU_STREAM_SELECT' AutoVisible='1' Width='23' ImageLeft='202' ImageTop='455' ImageWidth='23' ImageHeight='22' VisMinLeft='350' />	
+			#endif
+				
+			#if<SkinName==WdmSkin>
+				<Layout Align='Right' Width='8' CmdID='ID_EPG_EXPLORER' />					
+				<Button Align='Right' Tooltip='$ID_EPG_EXPLORER' CmdID='ID_EPG_EXPLORER' Width='23' ImageLeft='101' ImageTop='391' ImageWidth='23' ImageHeight='22' VisMinLeft='380' />
+			#endif						
+				<Layout Align='Right' Width='8' CmdID='ID_CLOSED_CAPTION' AutoVisible='1' />
+				<Button Align='Right' Tooltip='$ID_CLOSED_CAPTION' CmdID='ID_CLOSED_CAPTION' AutoVisible='1' DownFlag='1' Width='23' ImageLeft='0' ImageTop='391' ImageWidth='23' ImageHeight='22' VisMinLeft='410' />				
+			</Static>
+			
+			<Static Align='Bottom' Height='22' LeftMargin='10' RightMargin='10' TopMargin='0' BottomMargin='0' ImageLeft='3' ImageTop='668' ImageWidth='306' ImageHeight='22' AltImageLeft='371' AltImageTop='668' >
+
+			<Layout Align='Left' Width='2' />			
+			#if<SkinName==WdmSkin>
+				<Button Align='Left' Tooltip='$ID_WDM_CH_SEL_MENU' Cursor='HAND' CmdID='ID_WDM_CH_SEL_MENU' Width='50' AutoSize='1' ImageLeft='485' ImageTop='34' ImageWidth='41' ImageHeight='14' Alignment='5' LeftMargin='3' RightMargin='3' >
+					<Layout Width='5' />
+					<Label CmdID='CMD_WDM_CHANNEL_MESSAGE' ColorX='864' ColorY='528' Width='50' Height='15' AutoSize='1' FontName='Tahoma' FontSize='11' Text='$CMD_WDM_CHANNEL_MESSAGE' OffsetTop='1' />
+					<Layout Width='5' />
+				</Button>
+				<Layout Align='Left' Width='2' />
+			#endif
+				<Layout Align='Left' Width='3' />
+										
+				<Layout Align='Right' Width='10' />
+				<Slider Align='Right' CmdID='CMD_VOLUME_CTRL' Alignment='1' Width='70' Height='10' ImageWidth='70' ImageHeight='10' ThumbWidth='11' ThumbHeight='10' ImageLeft='175' ImageTop='194' BackImageLeft='175' BackImageTop='207' ThumbImageLeft='85' ThumbImageTop='239' LeftMargin='5' RightMargin='5' />
+				<Layout Align='Right' Width='4' />
+				<Button Align='Right' Tooltip='$ID_AUDIO_MUTE' CmdID='ID_AUDIO_MUTE' Width='13' Height='10' ImageLeft='175' ImageTop='167' />
+				<Layout Align='Right' Width='15' />
+
+				<Slider Align='Client' CmdID='CMD_TIMEBAR_CTRL' Alignment='1' ImageWidth='95' ImageHeight='10' ThumbWidth='11' ThumbHeight='10' 
+					ImageLeft='0' ImageTop='179' BackImageLeft='0' BackImageTop='193' AltImageLeft='0' AltImageTop='207' ThumbImageLeft='1' ThumbImageTop='239' 
+					LeftMargin='10' RightMargin='10' RepeatAImageLeft='148' RepeatAImageTop='241' RepeatBImageLeft='155' RepeatBImageTop='241' RepeatImageWidth='6' RepeatImageHeight='10'
+					BookmarkImageLeft='171' BookmarkImageTop='241' SeamlessImageLeft='188' SeamlessImageTop='241' />
+			
+			</Static>
+		

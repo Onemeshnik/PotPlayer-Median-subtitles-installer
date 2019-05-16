@@ -1,0 +1,19 @@
+﻿DAUMPLAYLIST
+playname=C:\Users\SamLab\Videos\
+playtime=0
+topindex=0
+1*file*mms://live1.wm.skynews.servecast.net/skynews_wmlz_live300k
+1*title*Новости » Sky News
+1*played*0
+2*file*mms://live.rfn.ru/r24_hq
+2*title*Новости » Россия 24
+2*played*0
+3*file*http://212.77.128.2:4022/udp/239.200.200.161:1234
+3*title*Кино » TV1000
+3*played*0
+4*file*rtmp://80.232.172.37/rtplive/vlc.sdp
+4*title*Музыка » Music Baltic
+4*played*0
+5*file*rtmp://europaplus.cdnvideo.ru:1935/europaplus-live/mp4:eptv_main.sdp
+5*title*Музыка » Europa Plus TV
+5*played*0

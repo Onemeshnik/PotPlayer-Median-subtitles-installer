@@ -1,0 +1,1 @@
+{scale:{up:2},gpu:0,pel:1,full:false}{block:{w:32,overlap:0},main:{search:{coarse:{satd:false,bad:{range:0}},type:2}},refine:[{search:{}}]}{rate:{num:15016,den:10000},algo:13,mask:{},scene:{mode:1}}

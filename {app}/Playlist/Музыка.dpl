@@ -1,0 +1,117 @@
+﻿DAUMPLAYLIST
+playname=http://5.196.138.6:1935/live/nrjbelgique_720p/playlist.m3u8
+topindex=0
+1*file*http://5.196.138.6:1935/live/nrjbelgique_720p/playlist.m3u8
+1*title*NRJ Hits
+1*played*0
+2*file*http://stream.cdn.smcloud.net/eska_party-t/eska_party_720p/playlist.m3u8
+2*title*ESKA PARTY TV
+2*played*0
+3*file*http://live-rmg.cdnvideo.ru/rmg/rutv_hd.sdp/playlist.m3u8
+3*title*RU TV HD
+3*played*0
+4*file*http://77.232.128.68/bks.m3u8
+4*title*Открытый HD
+4*played*0
+5*file*http://wse.planeta-online.tv:1935/live/channel_4/index.m3u8
+5*title*Fresh TV
+5*played*0
+6*file*http://stream.cdn.smcloud.net/vox-t/vox_720p/playlist.m3u8
+6*title*MUSIC VOX TV Olds cool
+6*played*0
+7*file*http://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8
+7*title*Ocko gold
+7*played*0
+8*file*http://stream.cdn.smcloud.net/best-t/best_720p/playlist.m3u8
+8*title*ESKA BEST MUSIC TV
+8*played*0
+9*file*http://stream.cdn.smcloud.net/eskarocktv-p/stream1/playlist.m3u8
+9*title*ESKA ROCK TV
+9*played*0
+10*file*http://tv.105.net/live/rmc1/playlist.m3u8
+10*title*RADIO MONTE CARLO TV
+10*played*0
+11*file*http://tv.105.net:1935/live/virgin1/index.m3u8
+11*title*Virgin Radio TV
+11*played*0
+12*file*http://nashetv01.hostingradio.ru:8081/hls/nashetv/nashelive.m3u8
+12*title*НАШЕ ТВ
+12*played*0
+13*file*http://highvolume03.streampartner.nl:1935/vleugels_hd5/livestream/index.m3u8
+13*title*Xite (NL)
+13*played*0
+14*file*http://70.166.99.93:1935/hmtv/myStream/playlist.m3u8
+14*title*Heavy Metal TV
+14*played*0
+15*file*http://energytv.vedge.infomaniak.com/livecast/energytv/playlist.m3u8
+15*title*NRJ TV
+15*played*0
+16*file*http://bitcdn-kronehit-live.bitmovin.com/hls/3000k/bitcodin.m3u8
+16*title*Kronehit HD
+16*played*0
+17*file*http://rosshow.gcdn.co/rosshow_live/ngrp:hittv_all/chunklist_b3200000.m3u8
+17*title*HITV
+17*played*0
+18*file*http://ooyalahd2-f.akamaihd.net/i/globalradio02_delivery@156522/master.m3u8
+18*title*Heart
+18*played*0
+19*file*http://1mstream.digicable.hu/hitmusic/hitmusic.m3u8
+19*title*Hit Music
+19*played*0
+20*file*http://kissfm-cires21-video.secure.footprint.net/hittv/master.m3u8
+20*title*Hit TV
+20*played*0
+21*file*http://musicbox.cdnvideo.ru/musicbox/musicboxtv.sdp/playlist.m3u8
+21*title*Music Box
+21*played*0
+22*file*http://212.26.132.86/hls/mb_ua_2500.m3u8
+22*title*Music Box UA
+22*played*0
+23*file*http://stream.cdn.smcloud.net/vox2-p/stream1/playlist.m3u8
+23*title*Music Vox TV
+23*played*0
+24*file*http://live.muzzone.cdnvideo.ru/muzzone/muzzone.sdp/playlist.m3u8
+24*title*Muzzone
+24*played*0
+25*file*http://hls.nebiset.tv/nebiset.m3u8
+25*title*Nebiset
+25*played*0
+26*file*http://ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist/cze/live_hq.m3u8
+26*title*Ocko
+26*played*0
+27*file*http://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist/cze/live_hq.m3u8
+27*title*Ocko expres
+27*played*0
+28*file*http://live-rmg.cdnvideo.ru/rmg/rutv_new.sdp/playlist.m3u8
+28*title*RU TV
+28*played*0
+29*file*http://217.12.116.122/hls/rutv_direct.m3u8
+29*title*RU TV (Молдова)
+29*played*0
+30*file*http://tv.105.net/live/105Test1/playlist.m3u8
+30*title*Radio 105 TV
+30*played*0
+31*file*http://musicbox.cdnvideo.ru/musicbox/musicbox.sdp/playlist.m3u8
+31*title*Russian Music Box
+31*played*0
+32*file*http://live.m2.tv/hls/stream.m3u8
+32*title*М2
+32*played*0
+33*file*http://109.70.184.19:8080/udp/239.195.32.54:1234
+33*title*Муз
+33*played*0
+34*file*http://hls.tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
+34*title*МузСоюз
+34*played*0
+35*file*http://hls.mycdn0633430096.cdnvideo.ru/mycdn0633430096/stream1_sd.sdp/playlist.m3u8
+35*title*О2 ТВ
+35*played*0
+36*file*http://rtmp.one.by:1300
+36*title*Первый Музыкальный HD BY
+36*played*0
+37*file*http://rtmp.one.by:2200
+37*title*Первый Музыкальный RU BY
+37*played*0
+38*file*http://rtmp.one.by:2300
+38*title*Первый Музыкальный RU HD BY
+38*played*0

@@ -1,0 +1,118 @@
+﻿			<Static Image='TouchMain.png' AlphaMode='1' Align='Top' LeftMargin='20' RightMargin='20' ImageLeft='3' ImageTop='674' ImageWidth='569' ImageHeight='41' Height='41' IsTitleBar='1' >		
+				<Layout Align='Left' Width='1' />
+				<Button Tooltip='$CMD_MAIN_MENU' CmdID='CMD_MAIN_MENU' Align='Left' Width='89' ImageLeft='0' ImageTop='0' ImageWidth='89' ImageHeight='40' />	
+				<!--Label Align='Left' CmdID='CMD_FILE_TYPE_MESSAGE' AutoVisible='1' AutoSize='1' ColorX='334' ColorY='110' Width='1' FontName='#DEFAULT_UI_FONT' FontSize='15' HoriAlignment='1' VertAlignment='1' Text=%s />
+				<Layout Align='Left' CmdID='CMD_FILE_TYPE_MESSAGE' AutoVisible='1' Width='10' />
+				<Image Align='Left' Image='Main.png' CmdID='CMD_FILE_TYPE_MESSAGE' AutoVisible='1' Width='3' ImageLeft='364' ImageTop='43' ImageWidth='3' ImageHeight='10' Alignment='5' /-->
+				<Layout Align='Left' CmdID='CMD_CAST_ADULT' AutoVisible='1' Width='5' />
+				<Image Align='Left' Image='Main.png' CmdID='CMD_CAST_ADULT' AutoVisible='1' Width='22' ImageLeft='730' ImageTop='421' ImageWidth='22' ImageHeight='22' Alignment='5' />
+				<Layout Align='Left' CmdID='CMD_CAST_TOUGH' AutoVisible='1' Width='5' />
+				<Image Align='Left' Image='Main.png' CmdID='CMD_CAST_TOUGH' AutoVisible='1' Width='26' ImageLeft='762' ImageTop='416' ImageWidth='26' ImageHeight='26' Alignment='5' />
+				<Layout Align='Left' Width='10' />
+                  Right Buttons
+				
+				<Layout Align='Right' Width='12' />
+				<Button Align='Right' Tooltip='$ID_APP_EXIT' CmdID='ID_APP_EXIT' Width='15' ImageLeft='793' ImageTop='0' ImageWidth='15' ImageHeight='16' Alignment='5' />
+				<Layout Align='Right' Width='11' />
+				<Button Align='Right' Tooltip='$CMD_FULL_WINDOW' CmdID='CMD_FULL_WINDOW' Width='15' ImageLeft='724' ImageTop='0' ImageWidth='15' ImageHeight='16' Alignment='5' />
+				<Layout Align='Right' Width='11' />
+
+				<Button Align='Right' Tooltip='$CMD_MIN_WINDOW' CmdID='CMD_MIN_WINDOW' Width='13' ImageLeft='525' ImageTop='0' ImageWidth='13' ImageHeight='16' Alignment='5' />
+				<Layout Align='Right' Width='11' />
+				<Button Align='Right' Tooltip='$CMD_RESTORE_WINDOW' CmdID='CMD_RESTORE_WINDOW' Width='15' ImageLeft='655' ImageTop='0' ImageWidth='15' ImageHeight='16' Alignment='5' />
+                                <Button Align='Right' Tooltip='$CMD_MAX_WINDOW' CmdID='CMD_MAX_WINDOW' Width='15' ImageLeft='586' ImageTop='0' ImageWidth='15' ImageHeight='16' Alignment='5' />
+				<Layout Align='Right' Width='11' />
+				<Button Align='Right' Tooltip='$ALWAYS_ON_TOP_CYCLE' CmdID='ID_ETC_NEXTONTOP' Width='15' ImageLeft='525' ImageTop='22' ImageWidth='15' ImageHeight='15' Alignment='5' AutoVisible='1' />
+				<Button Align='Right' Tooltip='$ALWAYS_ON_TOP' CmdID='ID_ETC_NEXTONTOP' Width='15' ImageLeft='593' ImageTop='20' ImageWidth='15' ImageHeight='15' Alignment='5' AutoVisible='2' />
+				<Button Align='Right' Tooltip='$ALWAYS_ON_TOP_PLAY' CmdID='ID_ETC_NEXTONTOP' Width='15' ImageLeft='659' ImageTop='20' ImageWidth='15' ImageHeight='15' Alignment='5' AutoVisible='3' />
+				<Button Align='Right' Tooltip='$ALWAYS_ON_TOP_FULL' CmdID='ID_ETC_NEXTONTOP' Width='15' ImageLeft='591' ImageTop='44' ImageWidth='15' ImageHeight='15' Alignment='5' AutoVisible='4' OffsetTop='-1' />
+				<Layout Align='Right' Width='12' />				
+
+				
+				<Button Align='Right' Tooltip='Скриншот в буфер | В файл...' Alignment='5'  CmdID='ID_VIDEO_IMAGE_COPY_SIZE' AltCmdID='ID_VIDEO_IMAGE_CAPTURE_SIZE'  Width='15' Height='14' ImageLeft='593' ImageTop='89' ImageWidth='15' ImageHeight='14' OffsetTop='0' />	
+				<Layout Align='Right' Width='13' />				
+				<Button Align='Right' Tooltip='Вывод инфы на экран' Alignment='5' CmdID='ID_PLAYINFO_OSD' AltCmdID='CMD_SET_SKIN_STYLE' SkinStyle='Geeky' Left='6' Top='10' Width='14' Height='14' ImageLeft='593' ImageTop='66' VisParentMinWidth='685' />
+				<Layout Align='Right' Width='10' />
+
+					<Button Align='Right' Tooltip='Проводник субтитров'			CmdID='ID_CAPTION_EXPLORER' AltCmdID='ID_SIMPLE_CAPTION_OPEN'	 Width='13' Height='14' ImageLeft='595' ImageTop='113' >
+
+					</Button>
+				<Layout Align='Right' Width='10' />	
+				
+				<Button Align='Right' Tooltip='Выключить режим "кино"'  CmdID='CMD_SET_SKIN_STYLE' AutoVisible='1' SkinStyle='Cinema'  Alignment='5' Width='14' Height='14' ImageLeft='660' ImageTop='89' ImageWidth='14' ImageHeight='14' VisParentMinWidth='653' />
+
+				<Button Align='Right' Tooltip='Включить режим "кино"'  CmdID='CMD_SET_SKIN_STYLE' AutoVisible='-1' SkinStyle='Cinema'   Alignment='5' Width='14' Height='14' ImageLeft='660' ImageTop='113' ImageWidth='14' ImageHeight='14' VisParentMinWidth='653' />
+				<Layout Align='Right' Width='205' />	
+				<Button Tooltip='Увеличить субтитры' CmdID='ID_CAPTION_INC_SIZE' Left='-250' Top='8' Width='15' Height='10' ImageLeft='396' ImageTop='119' />
+				<Button Tooltip='Уменьшить субтитры' CmdID='ID_CAPTION_DEC_SIZE' Left='-250' Top='20' Width='15' Height='10' ImageLeft='396' ImageTop='129' />	%sFPS🎨💬↕↔🏃
+	         <Label Text='↕A' AutoVisible='1' AutoSize='1' Left='-270' Top='0' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='-2' />
+				
+				<Button Tooltip='Увеличить отступ субтитров' CmdID='ID_CAPTION_INC_HMARGIN' Left='-290' Top='8' Width='15' Height='10' ImageLeft='396' ImageTop='119' />
+				<Button Tooltip='Уменьшить отступ субтитров' CmdID='ID_CAPTION_DEC_HMARGIN' Left='-290' Top='20' Width='15' Height='10' ImageLeft='396' ImageTop='129' />	
+%sFPS🎨💬↕↔🏃
+	         <Label Text='↔' AutoVisible='1' AutoSize='1' Left='-310' Top='0' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='-2' />
+			 
+				<Button Tooltip='Увеличить цветность' CmdID='ID_VIDEO_INC_HUE' Left='-330' Top='8' Width='15' Height='10' ImageLeft='396' ImageTop='119' />
+				<Button Tooltip='Уменьшить цветность' CmdID='ID_VIDEO_DEC_HUE' Left='-330' Top='20' Width='15' Height='10' ImageLeft='396' ImageTop='129' />	
+%sFPS🎨💬↕↔🏃
+	         <Label Text='🎨' AutoVisible='1' AutoSize='1' Left='-350' Top='0' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='-2' />
+			 
+			 
+				<Button Tooltip='Увеличить скорость' CmdID='ID_PLAY_SPEED_FASTER' Left='-370' Top='8' Width='15' Height='10' ImageLeft='396' ImageTop='119' />
+				<Button Tooltip='Уменьшить скорость' CmdID='ID_PLAY_SPEED_SLOWER' Left='-370' Top='20' Width='15' Height='10' ImageLeft='396' ImageTop='129' />	
+%sFPS🎨💬↕↔🏃
+	         <Label Text='🏃' AutoVisible='1' AutoSize='1' Left='-390' Top='0' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='-2' />
+			 
+				<Button Tooltip='Следующая позиция субтитров' CmdID='ID_PLAYBACK_NEXT_CAP' Left='-410' Top='8' Width='15' Height='10' ImageLeft='396' ImageTop='119' />
+				<Button Tooltip='Предыдущая позиция субтитров' CmdID='ID_PLAYBACK_PREV_CAP' Left='-410' Top='20' Width='15' Height='10' ImageLeft='396' ImageTop='129' />			
+%sFPS🎨💬↕↔🏃
+	         <Label Text='💬' AutoVisible='1' AutoSize='1' Left='-434' Top='0' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='-2' />
+			 
+					#if<SkinStyle==Geeky>
+				<Slider Align='Right' OffsetTop='13' Tooltip='Прозрачность' CmdID='CMD_TRANS_MAIN' Width='40' Height='16' ImageWidth='64' ImageHeight='16' ThumbWidth='17' ThumbHeight='16' ImageLeft='283' ImageTop='95' BackImageLeft='283' BackImageTop='83' ThumbImageLeft='283' ThumbImageTop='114' LeftMargin='5' RightMargin='5'/>
+	         <Label CmdID='CMD_VIDEO_RENDER_FPS_MESSAGE' Text='%s🎬' AutoVisible='1' AutoSize='1' Align='Right' Left='-50' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='0' />
+	         <Label CmdID='CMD_VIDEO_OUT_FPS_MESSAGE' Text='%s🡆' AutoVisible='1' AutoSize='1' Align='Right' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16'  HoriAlignment='1' VertAlignment='1' OffsetTop='0' />
+	         <Label CmdID='CMD_CPU_USAGE_SYSTEM_MESSAGE' Text='%s⚡ ' AutoVisible='1' AutoSize='1' Align='Right' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='0' />	
+
+					#else
+				#endif
+				<Layout Align='Right' Width='10' />				
+		 
+	         <Label CmdID='CMD_DOWNLOAD_RATE_MESSAGE' Text='DL%s  ' AutoVisible='1' AutoSize='1' Align='Right' ColorX='509' ColorY='11' Width='1' FontName='Tahoma' FontSize='16' HoriAlignment='1' VertAlignment='1' OffsetTop='0' />
+
+
+		 
+			 
+
+					<!--Button CmdID='ID_CAPTION_DEC_SIZE' Align='Right  Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='Tahoma' FontSize='11' Text='↓' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_DEF_SIZE' Align='Right  Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='Tahoma' FontSize='11' Text='$CONTROL_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_INC_SIZE' Align='Right  Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='Tahoma' FontSize='11' Text='↑' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Label  Width='66'  Height='24' FontName='Tahoma' FontSize='13' FontBold='1' Text='$CONTROL_FONT' ColorX='1052' ColorY='112' AutoSize='1' />
+					<Button CmdID='ID_CAPTION_FONT_SELECT' Align='Right  Width='256' Height='28' ImageLeft='307' ImageTop='27' />
+					<Label CmdID='CMD_CAPTION_FONT_MESSAGE'  Width='200' Height='25' FontName='Tahoma' FontSize='13' VertAlignment='1' ColorX='1052' ColorY='127' Ellipsis='1' />
+					<Button CmdID='ID_CAPTION_SLOW_SYNC' Align='Right  Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='Tahoma' FontSize='11' Text='$CONTROL_SUBTITLE_SLOWER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_RESET_SYNC' Align='Right  Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='Tahoma' FontSize='11' Text='$CONTROL_SUBTITLE_DEFAULT' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button>
+					<Button CmdID='ID_CAPTION_FAST_SYNC' Align='Right  Width='83' Height='28' ImageLeft='307' ImageTop='65'>
+						<Label FontName='Tahoma' FontSize='11' Text='$CONTROL_SUBTITLE_FASTER' HoriAlignment='1' VertAlignment='1' ColorX='1052' ColorY='127' />
+					</Button -->						 
+ /RightButtons				
+
+			<!--	#if<PlayerType==0>
+					<Layout Align='Right' Width='15' />				
+					<Button Align='Right' Tooltip='$CMD_POPUP_WINDOW_CAST' CmdID='CMD_POPUP_USER_MENU' Width='41' ImageLeft='0' ImageTop='1099' ImageWidth='41' ImageHeight='18' UserMenuName='CastPopupMenu' />
+				#endif -->
+			
+				
+				<Label OffsetLeft='-10' Align='Client' CmdID='CMD_TITLE_MESSAGE' ColorX='334' ColorY='110' UsingScroll='1' ScrollDistance='1' ScrollInterval='50' FontName='Tahoma' FontSize='16' VertAlignment='1' />				
+				
+			</Static>			

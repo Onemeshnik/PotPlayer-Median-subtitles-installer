@@ -1,0 +1,1 @@
+﻿<Static Align='Top' LeftMargin='20' RightMargin='20' Height='3' ImageLeft='0' ImageTop='487' ImageWidth='353' ImageHeight='3' AltImageLeft='368' AltImageTop='487' IsTitleBar='1' />

@@ -1,0 +1,40 @@
+﻿DAUMPLAYLIST
+playname=http://pstv.krasmix.ru/tv/1st/playlist.m3u8
+playtime=5121
+topindex=0
+1*file*http://pstv.krasmix.ru/tv/1st/playlist.m3u8
+1*title*Первый канал
+1*played*0
+2*file*http://pstv.krasmix.ru/tv/russia1/playlist.m3u8
+2*title*Россия 1
+2*played*0
+3*file*http://cdnmg.secure.live.rtr-vesti.ru/live/smil:rhd.smil/chunklist_b1600000.m3u8
+3*title*Россия 1 HD
+3*played*0
+4*file*http://pstv.krasmix.ru/tv/ntv/playlist.m3u8
+4*title*НТВ
+4*played*0
+5*file*http://cdn-01.bonus-tv.ru/btv/sm-tnt/type/user/devname/LG-SmartTV/devid/LG-1477141994/eol/20200101T0000/hash/ec3a7b7757181408093b5c1ee40a288028a9ba15/playlist.m3u8
+5*title*ТНТ
+5*played*0
+6*file*http://pstv.krasmix.ru/tv/5kanal/playlist.m3u8
+6*title*5 канал
+6*played*0
+7*file*http://cdn-01.bonus-tv.ru:8080/zvezda/index.m3u8
+7*title*Звезда
+7*played*0
+8*file*http://tvc.cdnvideo.ru/tvc-p212/smil:tvc.smil/playlist.m3u8
+8*title*ТВЦ
+8*played*0
+9*file*http://online.video.rbc.ru/online/rbctv_576p/index.m3u8
+9*title*РБК
+9*played*0
+10*file*http://online.video.rbc.ru/online/rbctv_576p/index.m3u8
+10*title*РБК (резерв)
+10*played*0
+11*file*http://kprf-htlive.cdn.ngenix.net/live/_definst_/stream_high/playlist.m3u8
+11*title*Красная линия
+11*played*0
+12*file*http://evronovosti.mediacdn.ru/sr1/evronovosti/chunklist_b2658304.m3u8
+12*title*Евроновости
+12*played*0
