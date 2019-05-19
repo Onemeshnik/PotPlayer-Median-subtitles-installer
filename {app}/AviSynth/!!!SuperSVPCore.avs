@@ -28,7 +28,7 @@ SetFilterMTMode("potplayer_source",3)
 potplayer_source()
 #ConvertToYV12()
 """)}
-BlockPercent=66
+
 #WTF2=FontColor<$10000? "menwe" : "bolwe"
 
 UseCoarseW= CoarseWidth==66? "" : "width:"+String(CoarseWidth)+","
@@ -40,7 +40,7 @@ global threads= tthreads == 66 ? threads : tthreads >100 ? threads+tthreads-100 
 orignum=FrameRateNumerator
 origdenom=FrameRateDenominator
 
-UseBlockPercent=BlockPercent==66? "":",block:"+BlockPercent+""
+UseBlockPercent=BlockPercent==66? "":",blocks:"+String(BlockPercent)+""
 
 bit=GetProcessInfo()
 Try{LoadPlugin(""+String(bit)+"\svpflow1.dll")
@@ -137,7 +137,7 @@ global super_params     = SuOR=="" ? "{"+gpuparams+","+pelparams+"}" : SuOR
 part1="{"+AnalyseBlock+"main:{search:{"+UseSearchDistance+"coarse:{"+UseCoarseType+""+UseCoarseW+""+AnalyseMainSearchCoarse+""
 part2="bad:{"+AnalyseMainBadLev+"}},type:"+String(UseSearchType)+"}},refine:[{"+UseThsad+"search:{}}]}"
 global analyse_params = AnOR == "" ? ""+part1+""+part2+"" :  AnOR
-usemode= mode==4 ? "3,limits:{m1:0,m2:0}" : mode==5? "3,limits:{m1:0}" : mode
+usemode= mode==3 ? "3,limits:{"+UseBlockPercent+"}" :  mode==4 ? "3,limits:{m1:0,m2:0"+UseBlockPercent+"}" : mode==5? "3,limits:{m1:0"+UseBlockPercent+"}" : mode
 global smoothFPS_params = SmOR=="" ? "{"+weakgpuparam+"rate:{"+rate+"},"+gpuid+"algo:"+String(algo)+",mask:{"+String(UseMaskArtefact)+"},scene:{mode:"+String(usemode)+"}}" : SmOR
 
 global demo_Mode=0
